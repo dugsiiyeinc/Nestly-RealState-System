@@ -94,6 +94,24 @@ img {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.hero-content h1 {
+  margin-top: 10rem;
+  width: 768px;
+  height: 144px;
+  line-height: 4rem;
+  font-size: 4rem;
+}
+
+.hero-content p {
+  margin-top: 5rem;
+  width: 758px;
+  height: 54px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: #555;
+}
+
 .content-review {
   display: flex;
   width: 735px;
