@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 /* CSS Reseting */
 * {
@@ -7,7 +7,6 @@
   padding: 0;
 }
 
-
 /* Basic Styling */
 
 body {
@@ -15,6 +14,7 @@ body {
   color: #fff;
   background: #1a1a1a;
   cursor: pointer;
+  overflow: hidden;
 }
 
 ul {
@@ -27,7 +27,7 @@ a {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
 }
 
 /* Navigation Bar */
@@ -39,20 +39,21 @@ img {
   align-items: center;
   padding: 40px 120px;
   background: #1a1a1a;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
   font-size: 1.5rem;
+  /* position: sticky; */
 }
 
-.logo{
+.logo {
   display: flex;
   align-items: center;
   font-size: 1.6rem;
 }
-.logo .logo-title{
+.logo .logo-title {
   font-weight: bold;
   color: wheat;
 }
-.logo img{
+.logo img {
   width: 60px;
   height: 60px;
 }
@@ -65,7 +66,7 @@ img {
   color: wheat;
 }
 
-.login-button{
+.login-button {
   background-color: #333;
   padding: 10px 15px;
   border-radius: 7px;
@@ -77,3 +78,19 @@ img {
 .login-button:hover {
   background-color: #555;
 }
+
+/* Hero Section */
+.hero-section {
+  display: grid;
+  padding: 2rem;
+  background-color: #1a1a1a;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  padding: 40px 120px;
+}
+
+.hero-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
