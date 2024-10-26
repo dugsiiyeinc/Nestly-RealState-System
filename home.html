@@ -3,12 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="../js/script.js" defer></script>
+    <link
+      rel="shortcut icon"
+      href="https://static.vecteezy.com/system/resources/thumbnails/023/495/230/small_2x/real-estate-logo-1-free-png.png"
+      type="image/x-icon"
+    />
+    <script src="../Nestly-RealState-System/js/home_js/home.js" defer></script>
     <link rel="stylesheet" href="./css/home_css/home.css" />
     <title>Home Page</title>
   </head>
   <body>
-    <!-- Navbar -->
+    <!--~ NAVBARS -->
     <nav>
       <div class="navbar">
         <div class="logo">
@@ -22,13 +27,12 @@
           <li><a href="#home">Home</a></li>
           <li><a href="#About Us">About Us</a></li>
           <li><a href="#Properties">Properties</a></li>
-          <li><a href="#Service">Service</a></li>
         </ul>
         <a href="#" class="login-button">Sign Up</a>
       </div>
     </nav>
 
-    <!-- hero section -->
+    <!--~ HERO SECTION -->
     <section class="hero-section">
       <div class="hero-container">
         <!-- grid Container 1 -->
@@ -57,11 +61,93 @@
             </div>
           </div>
         </div>
-         <!-- grid Container 2 -->
-         <div class="hero-image">
+        <!-- grid Container 2 -->
+        <div class="hero-image">
           <img src="html/home_html/img/image.png" alt="hero image" />
         </div>
       </div>
     </section>
+
+    <!--~ FEATURED PROPERTIES -->
+    <section class="featured-section">
+      <h1 id="featured-header">Featured Propertes</h1>
+      <p id="featured-paragraph">
+        Explore our handpicked selection of featured properties. Each listing
+        offers a glimpse into exceptional homes and investments available
+        through Estatein. Click "View Details" for more information.
+      </p>
+      <div class="property-cards">
+        <!-- Property Card One -->
+        <div class="property-card">
+          <img
+            src="./html/home_html/img/house-1.png"
+            alt="image of house one"
+          />
+          <div class="property-info">
+            <h3>Seaside Serenity Villa</h3>
+            <p>
+              A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban
+              neighborhood... <a href="#">Read More</a>
+            </p>
+            <div class="property-features">
+              <span>🛏️ 4-Bedroom</span>
+              <span>🛁 3-Bathroom</span>
+              <span>🏠 Villa</span>
+            </div>
+            <div class="property-price">Price $550,000</div>
+            <button class="property-button">View Property Details</button>
+          </div>
+        </div>
+
+        <!-- Property Card Two -->
+        <div class="property-card">
+          <img
+            src="./html/home_html/img/house-2.png"
+            alt="image of house one"
+          />
+          <div class="property-info">
+            <h3>Metropolitan Haven</h3>
+            <p>
+              A chic and fully-furnished 2-bedroom apartment with panoramic city
+              views... <a href="#">Read More</a>
+            </p>
+
+            <div class="property-features">
+              <span>🛏️ 4-Bedroom</span>
+              <span>🛁 3-Bathroom</span>
+              <span>🏠 Villa</span>
+            </div>
+            <div class="property-price">Price $550,000</div>
+            <button class="property-button">View Property Details</button>
+          </div>
+        </div>
+
+        <!-- Property Card Three -->
+        <div class="property-card">
+          <img
+            src="./html/home_html/img/house-3.png"
+            alt="image of house one"
+          />
+          <div class="property-info">
+            <h3>Rustic Retreat Cottage</h3>
+            <p>
+              An elegant 3-bedroom, 2.5-bathroom townhouse in a gated
+              community... <a href="#">Read More</a>
+            </p>
+
+            <div class="property-features">
+              <span>🛏️ 4-Bedroom</span>
+              <span>🛁 3-Bathroom</span>
+              <span>🏠 Villa</span>
+            </div>
+            <div class="property-price">Price $550,000</div>
+            <button class="property-button">View Property Details</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    
   </body>
 </html>
