@@ -10,11 +10,14 @@ body {
   font-family: "Urbanist", sans-serif;
     background-color: #141414;
 }
+p{
+    color: #999999;
+}
 img {
     max-width: 100%;
 }
 .container {
-    width: min(90%, 1120px);
+    width: min(100%, 1140px);
     margin: 0 auto;
     
 }
@@ -53,8 +56,8 @@ img {
 }
 .content-journey h2 {
   font-weight:600 ;
-  font: size 1.043rem ;
-  line-height: 150%;
+  font-size: 2.43rem ;
+  line-height: 190%;
   color: #fff;
   
 }
@@ -88,4 +91,70 @@ img {
 }
 .journey-img {
     flex-basis: 48%;
+}
+
+/* * Our value style section */
+.value {
+    margin-top: 5rem;
+}
+.our-value-div {
+    display: flex;
+    gap: 3rem; 
+}
+.value-text {
+    flex-basis: 50%;
+    color: #fff;
+    align-content: center;
+}
+.value-text h2 {
+    font-size: 2.7rem;
+    line-height: 160%;
+    font-weight: 500;
+    word-spacing: 5px;
+}
+.value-text p {
+    color: #999999;
+    line-height: 150%;
+}
+.Boxes {
+    /* flex-basis: 60%; */
+    border: 1px solid #45434354;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 10px #4543433e;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 15px;
+    gap: 2rem;
+}
+.box{
+    padding: 10px;
+    margin-bottom: 7px;
+}
+.Boxes .box img {
+    width: 50px;
+    height: 50px;
+    border: 1px slateblue solid;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box:nth-child(odd){
+    border-right: 1px solid #5857579b;
+   
+}
+
+
+
+.box p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 0.8rem ;
+    & span{
+        font-size: 1.2rem;
+        color: #fff;
+        font-weight: 600;
+    }
 }
