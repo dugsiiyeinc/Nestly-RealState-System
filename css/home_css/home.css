@@ -94,3 +94,17 @@ img {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.content-review {
+  display: flex;
+  width: 735px;
+  height: 100px;
+  margin-top: 5rem;
+  gap: 10px;
+}
+.content-count {
+  flex: 1;
+  border-radius: 10px;
+  text-align: center;
+  background: #1a1a1a;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+}
