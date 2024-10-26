@@ -42,3 +42,25 @@ img {
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   font-size: 1.5rem;
 }
+
+.logo{
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+}
+.logo .logo-title{
+  font-weight: bold;
+  color: wheat;
+}
+.logo img{
+  width: 60px;
+  height: 60px;
+}
+.nav-links {
+  display: flex;
+  gap: 3.5rem;
+}
+
+.nav-links a:hover {
+  color: wheat;
+}
