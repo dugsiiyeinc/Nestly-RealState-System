@@ -228,3 +228,20 @@ img {
   color: wheat;
   text-decoration: none;
 }
+
+.property-features {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 1.3rem;
+  color: #888;
+  margin-bottom: 1rem;
+}
+
+.property-price {
+  font-weight: bold;
+  color: wheat;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
