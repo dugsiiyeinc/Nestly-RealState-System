@@ -420,6 +420,18 @@ img {
   margin: 0 auto 3rem;
 }
 
+@media (min-width: 768px) {
+  .testimonial-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .testimonial-cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 /* Testimonial Cards Container */
 .testimonial-cards {
   display: grid;
