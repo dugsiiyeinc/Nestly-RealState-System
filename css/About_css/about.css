@@ -31,12 +31,16 @@ img {
 /* * header style  */
 
 /*^ NAV BARS */
+header{
+    border-bottom: 1px solid #454343d6;
+    margin-bottom: 35px;
+}
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 120px;
-  background: #1a1a1a;
+  padding: 40px 0px;
+ 
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
   font-size: 1.5rem;
 }
