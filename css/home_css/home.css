@@ -379,6 +379,27 @@ img {
   background-color: #7f5a15;
 }
 
+/* RESPONSIVENESS */
+@media (max-width: 768px) {
+  .property-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+    padding: 0 1rem;
+  }
+
+  .property-card {
+    width: 90%;
+  }
+}
+
 /*TESTIMONIAL */
 .testimonial {
   padding: 40px 120px;
@@ -487,30 +508,6 @@ img {
     text-align: left;
   }
 }
-
-
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .property-cards {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  h2 {
-    font-size: 2rem;
-  }
-
-  p {
-    font-size: 0.9rem;
-    padding: 0 1rem;
-  }
-
-  .property-card {
-    width: 90%;
-  }
-}
-
 
 
 
