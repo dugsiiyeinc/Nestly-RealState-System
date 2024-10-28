@@ -58,14 +58,20 @@ img {
     display: block;
 }
 
-/*^ NAV BARS */
+/* CONTAINER */
+.container {
+  max-width: 1700px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* NAVBAR STYLES */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 120px;
-  background: #1a1a1a;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  background: var(--color-dark);
   font-size: 1.5rem;
 }
 
@@ -77,30 +83,33 @@ img {
 
 .logo .logo-title {
   font-weight: bold;
-  color: wheat;
+  color: var(--color-wheat);
 }
 
 .logo img {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
 }
 
 .nav-links {
   display: flex;
-  gap: 5rem;
+  justify-content: center;
+  gap: 2rem;
+  flex: 1;
 }
 
 .nav-links a:hover {
-  color: wheat;
+  color: var(--color-wheat);
 }
 
 .login-button {
   background-color: #333;
   padding: 10px 15px;
   border-radius: 7px;
-  border: none;
-  transition: background-color 0.3s ease;
   font-weight: bold;
+  cursor: pointer;
+  transition: var(--transition);
 }
 
 .login-button:hover {
