@@ -115,8 +115,37 @@ img {
 .login-button:hover {
   background-color: #555;
 }
+/* HAMBURGER MENU ICON */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  color: var(--color-wheat);
+  cursor: pointer;
+}
 
-/*^ HERO SECTION */
+.hamburger span {
+  display: block;
+  height: 4px;
+  width: 30px;
+  background-color: var(--color-wheat);
+  margin: 6px auto;
+  transition: var(--transition);
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 8px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -8px);
+}
+
+
+/* HERO SECTION */
 .hero-section {
   display: grid;
   padding: 2rem;
