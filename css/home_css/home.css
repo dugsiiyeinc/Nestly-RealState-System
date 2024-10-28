@@ -277,7 +277,7 @@ img {
 }
 
 
-/*^FEATURED PROPERTIES */
+/* FEATURED PROPERTIES */
 .featured-properties {
   max-width: 1200px;
   margin: auto;
@@ -305,6 +305,7 @@ img {
   font-size: 1.2rem;
   margin-bottom: 2rem;
 }
+
 
 .property-card {
   border-radius: 8px;
