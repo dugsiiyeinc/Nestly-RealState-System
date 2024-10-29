@@ -46,18 +46,18 @@ authForm.addEventListener('submit', function (e) {
                 title: "Verified",
                 text: "Welcome ",
                 // allowOutsideClick: false
-              
-            }).then((result)=> {
+
+            }).then((result) => {
                 if (result.isConfirmed) {
-                      // **! Remember to update here **
+                    // **! Remember to update here **
                     window.location.href = `./about.html`
                     return;
                 }
             })
-           
+
             // window.location.href = `./about.html`
 
-          
+
         } else {
             Swal.fire({
                 icon: "error",
@@ -75,21 +75,28 @@ authForm.addEventListener('submit', function (e) {
                 icon: "warning",
                 title: "Oops...",
                 text: `User ${username.value} is already exit`
-                
+
             });
             return;
         }
 
         users.push(user)
         localStorage.setItem('users', JSON.stringify(users));
-        alert('Registaration is successflly')
-       
+        // alert('Registaration is successflly')
+
+        Swal.fire({
+            icon: "success",
+            title: "Registration is successflly",
+            text: `You have successfully registered.`
+
+        });
+
         switchFormAuto()
     }
 
     if (!signIn && confirmPassword.value.trim() !== password.value.trim()) {
         alert('Passwords do not match')
-    
+
         return;
     }
 
