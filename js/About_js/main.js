@@ -47,7 +47,11 @@ authForm.addEventListener('submit', function (e) {
 
           
         } else {
-           alert('Invalid credentials')
+            Swal.fire({
+                icon: "error",
+                title: "Oops...",
+                text: "Invalid Credential"
+            });
         }
 
     } else {
