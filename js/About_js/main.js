@@ -17,9 +17,6 @@ document.body.addEventListener("click", (e) => {
     switchAuthForm();
   });
   
-  function switchAuthForm() {
-    // Placeholder for switching form functionality
-  }
   
 //   ** Set Up Auth Form Submission Event
 const authForm = document.querySelector("#authForm");
@@ -71,3 +68,29 @@ authForm.addEventListener("submit", (e) => {
 
   
 });
+
+// * Complete Form Toggle Functionality in switchAuthForm
+function switchAuthForm() {
+    signIn = !signIn;
+  
+    if (!signIn) {
+      authButton.textContent = "Sign up";
+      formTitle.textContent = "Sign up";
+      username.style.display = "block";
+      confirmPassword.style.display = "block";
+  
+      authSwitch.innerHTML = `Already have an account? <a href="#" id="switchForm">Sign in </a>`;
+    } else {
+      authButton.textContent = "Sign in";
+      formTitle.textContent = "Sign in";
+      username.style.display = "none";
+      confirmPassword.style.display = "none";
+      username.value = "";
+      confirmPassword.value = "";
+      email.value = "";
+      password.value = "";
+  
+      authSwitch.innerHTML = `Already have an account? <a href="#" id="switchForm">Sign in </a>`;
+    }
+  }
+  
