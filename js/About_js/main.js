@@ -95,7 +95,13 @@ authForm.addEventListener('submit', function (e) {
     }
 
     if (!signIn && confirmPassword.value.trim() !== password.value.trim()) {
-        alert('Passwords do not match')
+        // alert('Passwords do not match')
+        Swal.fire({
+            icon: "warning",
+            title: "Oops...",
+            text: `Passwords do not match`
+            
+        });
 
         return;
     }
