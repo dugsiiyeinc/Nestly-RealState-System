@@ -1,71 +1,83 @@
+/* ====================== */
 /* IMPORT GOOGLE FONTS */
+/* ====================== */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
 
+/* ================*/
 /* CSS VARIABLES */
+/* ===============*/
 :root {
-    /* Font and Color Variables */
-    --font-family: "Roboto", sans-serif;
-    --color-white: #fff;
-    --color-dark: #1a1a1a;
-    --color-wheat: wheat;
-    --color-light-grey: #555;
-    --color-blue: #007bff;
-    
-    /* Shadow and Transition Variables */
-    --shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
-    --transition: all 0.3s ease;
+  /* Font and Color Variables */
+  --font-family: "Roboto", sans-serif;
+  --color-white: #fff;
+  --color-dark: #1a1a1a;
+  --color-wheat: wheat;
+  --color-light-grey: #555;
+  --color-blue: #007bff;
 
-    /* Font Size Variables */
-    --font-size-h1-large: 4rem;
-    --font-size-h1-medium: 3rem;
-    --font-size-h1-small: 2.5rem;
-    --font-size-p-large: 20px;
-    --font-size-p-medium: 1.5rem;
-    --font-size-p-small: 1rem;
+  /* Shadow and Transition Variables */
+  --shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+  --transition: all 0.3s ease;
+
+  /* Font Size Variables */
+  --font-size-h1-large: 4rem;
+  --font-size-h1-medium: 3rem;
+  --font-size-h1-small: 2.5rem;
+  --font-size-p-large: 20px;
+  --font-size-p-medium: 1.5rem;
+  --font-size-p-small: 1rem;
 }
 
+/* ============*/
 /* CSS RESET */
+/* ============*/
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+/* ===============*/
 /* BASIC STYLING */
+/* ===============*/
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: var(--font-family);
-    color: var(--color-white);
-    background: var(--color-dark);
-    overflow-x: hidden;
+  font-family: var(--font-family);
+  color: var(--color-white);
+  background: var(--color-dark);
+  overflow-x: hidden;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
-    color: var(--color-white);
+  text-decoration: none;
+  color: var(--color-white);
 }
 
 img {
-    max-width: 100%;
-    display: block;
+  max-width: 100%;
+  display: block;
 }
 
+/* ===========*/
 /* CONTAINER */
+/* ==========*/
 .container {
   max-width: 1700px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
+/* ===============*/
 /* NAVBAR STYLES */
+/* ===============*/
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -115,7 +127,10 @@ img {
 .login-button:hover {
   background-color: #555;
 }
+
+/* =====================*/
 /* HAMBURGER MENU ICON */
+/* ====================*/
 .hamburger {
   display: none;
   font-size: 2rem;
@@ -144,8 +159,9 @@ img {
   transform: rotate(-45deg) translate(6px, -8px);
 }
 
-
+/* ==============*/
 /* HERO SECTION */
+/* =============*/
 .hero-section {
   padding: 40px 20px;
   background-color: var(--color-dark);
@@ -161,7 +177,7 @@ img {
 .hero-content {
   display: flex;
   flex-direction: column;
-  margin-top: 3rem;
+  margin-top: 6rem;
 }
 
 .hero-content h1 {
@@ -189,17 +205,18 @@ img {
   border-radius: 10px;
 }
 
+/* ========================*/
 /* CONTENT REVIEW SECTION */
+/* ========================*/
 .content-review {
+  max-width: 1723px;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
-  max-width: 735px;
   margin: 5rem auto;
   gap: 10px;
 }
 
-/* CONTENT REVIEW SECTION */
 .content-count {
   flex: 1 1 220px;
   border-radius: 10px;
@@ -230,54 +247,9 @@ img {
   color: var(--color-light-grey);
 }
 
-/* RESPONSIVE STYLES */
-@media (max-width: 768px) {
-  .hamburger {
-      display: block;
-      font-size: 2.5rem;
-  }
-
-  .nav-links,
-  .login-button {
-      display: none;
-      flex-direction: column;
-      align-items: center;
-      position: absolute;
-      top: 70px;
-      left: 0;
-      width: 100%;
-      background: var(--color-dark);
-      padding: 1.3rem 0;
-      gap: 2rem;
-      z-index: 1;
-      transition: var(--transition);
-  }
-
-  .nav-links.active,
-  .login-button.active {
-      display: flex;
-  }
-
-  .login-button {
-      width: 100%;
-      margin-inline: auto;
-      background-color: var(--color-wheat);
-      color: var(--color-dark);
-      padding: 20px;
-  }
-
-  .hero-content {
-      margin-top: 0;
-  }
-
-  .hero-content p {
-      margin-top: 1.3rem;
-      font-size: var(--font-size-p-small);
-  }
-}
-
-
-/* FEATURED PROPERTIES */
+/*===================*/
+/*FEATURED PROPERTIES*/
+/*===================*/
 .featured-properties {
   max-width: 1200px;
   margin: auto;
@@ -306,7 +278,6 @@ img {
   margin-bottom: 2rem;
 }
 
-
 .property-card {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -328,7 +299,7 @@ img {
 }
 
 .property-info {
-  padding: 1.3rem 0; /*In responsive make it none */
+  padding: 1.3rem 0;
 }
 
 .property-info h3 {
@@ -379,28 +350,9 @@ img {
   background-color: #7f5a15;
 }
 
-/* RESPONSIVENESS */
-@media (max-width: 768px) {
-  .property-cards {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  h2 {
-    font-size: 2rem;
-  }
-
-  p {
-    font-size: 0.9rem;
-    padding: 0 1rem;
-  }
-
-  .property-card {
-    width: 90%;
-  }
-}
-
-/* Testimonial Section */
+/*============*/
+/* TESTIMONIAL*/
+/*============*/
 .testimonial {
   text-align: center;
   padding: 4rem 1.5rem;
@@ -420,28 +372,14 @@ img {
   margin: 0 auto 3rem;
 }
 
-@media (min-width: 768px) {
-  .testimonial-cards {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (min-width: 1024px) {
-  .testimonial-cards {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
-/* Testimonial Cards Container */
 .testimonial-cards {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
-  max-width: 1200px;
+  grid-template-columns: repeat(3, 3fr);
+  gap: 3rem;
+  max-width: 1700px;
   margin: 0 auto;
 }
 
-/* Testimonial Card Style */
 .testimonial-card {
   background: var(--color-light-grey);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -454,10 +392,9 @@ img {
   transform: translateY(-5px);
 }
 
-/* Testimonial Info */
 .testimonial-info span {
   font-size: 1.2rem;
-  color: #ffd700; /* Gold star color */
+  color: #ffd700;
 }
 
 .testimonial-info h3 {
@@ -468,11 +405,10 @@ img {
 
 .testimonial-info p {
   font-size: 1rem;
-  color:var(--color-white) ;
+  color: var(--color-white);
   line-height: 1.6;
 }
 
-/* Testimonial Profile */
 .testimonial-profile {
   display: flex;
   align-items: center;
@@ -498,78 +434,78 @@ img {
   color: #f9f9f9;
 }
 
+/*----------------------*/
+/* MEDIA QUERIES SECTION*/
+/*----------------------*/
 
-@media (max-width: 1024px) {
-  .hero-content h1 {
-      font-size: var(--font-size-h1-medium);
-  }
-
-  .hero-content p {
-      font-size: var(--font-size-p-medium);
-  }
-
-  .hero-image img {
-      max-height: 60vh;
-      object-fit: cover;
-  }
-}
+/*===============*/
+/*01-MEDIA QUERY*/
+/*===============*/
 
 @media (max-width: 768px) {
-  .hero-content h1 {
-      font-size: var(--font-size-h1-small);
-      margin-top: 1rem;
+  .hamburger {
+    display: block;
+    font-size: 2.5rem;
+  }
+
+  .nav-links,
+  .login-button {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: var(--color-dark);
+    padding: 1.3rem 0;
+    gap: 2rem;
+    z-index: 1;
+    transition: var(--transition);
+  }
+
+  .nav-links.active,
+  .login-button.active {
+    display: flex;
+  }
+
+  .login-button {
+    width: 100%;
+    margin-inline: auto;
+    background-color: var(--color-wheat);
+    color: var(--color-dark);
+    padding: 20px;
+  }
+
+  .hero-content {
+    margin-top: 0;
   }
 
   .hero-content p {
-      font-size: var(--font-size-p-small);
+    margin-top: 1.3rem;
+    font-size: var(--font-size-p-small);
   }
-
-  .hero-image {
-      order: -1;
-  }
-
-  .hero-image img {
-      max-height: 60vh;
-  }
-}
-
-@media (min-width: 769px) {
-  .hero-container {
-      grid-template-columns: 1fr 1fr;
-  }
-
-  .hero-image img {
-      max-height: 100%;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .content-review {
-      flex-direction: row;
-      justify-content: space-between;
-  }
-
-  .content-count {
-      flex: 1 1 calc(33.333% - 10px);
-  }
-}
-
-@media (min-width: 1588px) {
-  .hero-content h1 {
-      font-size: 3.5rem;
-  }
-
-  .hero-content p {
-      font-size: var(--font-size-p-medium);
-  }
-}
-
-@media (max-width: 768px) {
   .property-cards {
     flex-direction: column;
     align-items: center;
   }
 
+  .hero-content h1 {
+    font-size: var(--font-size-h1-small);
+    margin-top: 1rem;
+  }
+
+  .hero-content p {
+    font-size: var(--font-size-p-small);
+  }
+
+  .hero-image {
+    order: -1;
+  }
+
+  .hero-image img {
+    max-height: 60vh;
+  }
   h2 {
     font-size: 2rem;
   }
@@ -584,3 +520,101 @@ img {
   }
 }
 
+/*===============*/
+/*02-MEDIA QUERY*/
+/*===============*/
+@media (max-width: 1024px) {
+  .hero-content h1 {
+    font-size: var(--font-size-h1-medium);
+  }
+
+  .hero-content p {
+    font-size: var(--font-size-p-medium);
+  }
+
+  .hero-image img {
+    max-height: 60vh;
+    object-fit: cover;
+  }
+}
+
+/*===============*/
+/*03-MEDIA QUERY*/
+/*===============*/
+@media (min-width: 768px) {
+  .hero-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero-image img {
+    max-height: 100%;
+  }
+  .testimonial-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/*===============*/
+/*04-MEDIA QUERY*/
+/*===============*/
+@media (min-width: 1024px) {
+  .testimonial-cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/*===============*/
+/*05-MEDIA QUERY*/
+/*===============*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  .content-review {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .content-count {
+    flex: 1 1 calc(33.333% - 10px);
+  }
+}
+
+/*===============*/
+/*06-MEDIA QUERY*/
+/*===============*/
+@media (min-width: 1588px) {
+  .hero-content h1 {
+    font-size: 3.5rem;
+  }
+
+  .hero-content p {
+    font-size: var(--font-size-p-medium);
+  }
+}
+
+/*===============*/
+/*07-MEDIA QUERY*/
+/*===============*/
+@media (max-width: 768px) {
+  .property-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+   p {
+    font-size: 0.9rem;
+    padding: 0 1rem;
+  }
+
+  .property-card {
+    width: 90%;
+  }
+  .testimonial-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    max-width: 1700px;
+    margin: 0 auto;
+  }
+}
