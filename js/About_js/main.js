@@ -41,7 +41,19 @@ authForm.addEventListener('submit', function (e) {
 
             localStorage.setItem('onlineUser', JSON.stringify(existingUser))
             //* validate
-            alert('Verified you are in')
+            Swal.fire({
+                icon: "success",
+                title: "Verified",
+                text: "Welcome ",
+                // allowOutsideClick: false
+              
+            }).then((result)=> {
+                if (result.isConfirmed) {
+                      // **! Remember to update here **
+                    window.location.href = `./about.html`
+                    return;
+                }
+            })
            
             // window.location.href = `./about.html`
 
