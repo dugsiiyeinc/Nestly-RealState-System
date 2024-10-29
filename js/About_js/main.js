@@ -8,3 +8,16 @@ const email = document.querySelector("#email");
 const password = document.querySelector("#password");
 const confirmPassword = document.querySelector("#confirmPassword");
 
+
+let signIn = true;
+
+document.body.addEventListener("click", (e) => {
+    if (e.target.id != "switchForm") return;
+    
+    switchAuthForm();
+  });
+  
+  function switchAuthForm() {
+    // Placeholder for switching form functionality
+  }
+  
