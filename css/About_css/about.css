@@ -18,9 +18,67 @@ img {
     max-width: 100%;
 }
 .container {
-    width: min(100%, 1120px);
-    margin: 0 auto;
-    
+
+  width: min(100%, 1120px);
+  margin: 0 auto;
+}
+/* * header style  */
+
+/*^ NAV BARS */
+header{
+    border-bottom: 1px solid #454343d6;
+    margin-bottom: 35px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0px;
+ 
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  font-size: 1.5rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+}
+
+.logo .logo-title {
+  font-weight: bold;
+  color: wheat;
+}
+
+.logo img {
+  width: 60px;
+  height: 60px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 5rem;
+}
+.nav-links a {
+  color: #fff;
+  transition: all 0.5s;
+}
+.nav-links a:hover {
+  color: slateblue;
+}
+
+.login-button {
+  background-color: #333;
+  padding: 10px 15px;
+  border-radius: 7px;
+  border: none;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+  color: #fff;
+  &:hover {
+    color: slateblue !important;
+  }
+
 }
 
 /* * Banner section style */
