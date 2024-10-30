@@ -29,13 +29,19 @@
         margin-bottom: 20px;
     }
   }
-  
+  .auth-container input.empty {
+    background-color: #333;
+  }
+  .auth-container input.filled {
+    background-color: #fff;
+    color: #333;
+  }
   .auth-container input {
     width: 100%;
     display: block;
     padding: 10px;
     margin: 10px 0;
-    background: #333;
+ 
     border: 1px solid #444;
     color: white;
     border-radius: 5px;
@@ -67,7 +73,7 @@
     margin-top: 15px;
     a {
         color: white;
-        text-decoration: none;
+        text-decoration: underline;
         transition: text-decoration 0.5s ease-in-out;
         &:hover{
             text-decoration: underline;
