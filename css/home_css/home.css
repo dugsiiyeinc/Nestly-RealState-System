@@ -27,7 +27,9 @@
   --font-size-p-medium: 1.5rem;
   --font-size-p-small: 1rem;
 }
-
+.container {
+  width: min(90%,1120px);
+}
 /* ============*/
 /* CSS RESET */
 /* ============*/
