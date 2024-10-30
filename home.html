@@ -3,18 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="js/home_js/home.js" defer></script>
     <link
       rel="shortcut icon"
       href="https://static.vecteezy.com/system/resources/thumbnails/023/495/230/small_2x/real-estate-logo-1-free-png.png"
       type="image/x-icon"
     />
     <script src="../Nestly-RealState-System/js/home_js/home.js" defer></script>
-    <link rel="stylesheet" href="./css/home_css/home.css" />
+    <link rel="stylesheet" href="css/home_css/fixbug.css" />
     <title>Home Page</title>
   </head>
   <body>
-    <!--~ NAVBARS -->
-    <nav>
+    <!-- NAVBARS -->
+    <nav class="container">
       <div class="navbar">
         <div class="logo">
           <span class="logo-title">Nestly</span>
@@ -25,19 +26,24 @@
         </div>
         <ul class="nav-links">
           <li><a href="#home">Home</a></li>
-          <li><a href="#About Us">About Us</a></li>
-          <li><a href="#Properties">Properties</a></li>
+          <li><a href="#about-us">About Us</a></li>
+          <li><a href="#properties">Properties</a></li>
         </ul>
         <a href="#" class="login-button">Sign Up</a>
+
+        <div class="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     </nav>
 
-    <!--~ HERO SECTION -->
-    <section class="hero-section">
+    <!-- HERO SECTION -->
+    <section class="hero-section container">
       <div class="hero-container">
-        <!-- grid Container 1 -->
         <div class="hero-content">
-          <h1>Find Your Dream Home Property with Nestly Realstate Company</h1>
+          <h1>Find Your Dream Home Property with Nestly Real Estate Company</h1>
           <p>
             Explore our wide range of properties and find your perfect home.
             Your journey to finding the perfect property begins here. Explore
@@ -47,21 +53,20 @@
             <!-- Count 1 -->
             <div class="content-count">
               <span class="review-count-number">200 + </span>
-              <span class="review-feelings">Happy Customer</span>
+              <span class="review-feelings">Happy Customers</span>
             </div>
             <!-- Count 2 -->
             <div class="content-count">
               <span class="review-count-number">200 + </span>
-              <span class="review-feelings">Happy Customer</span>
+              <span class="review-feelings">Properties Sold</span>
             </div>
             <!-- Count 3 -->
             <div class="content-count">
               <span class="review-count-number">200 + </span>
-              <span class="review-feelings">Happy Customer</span>
+              <span class="review-feelings">Houses Available</span>
             </div>
           </div>
         </div>
-        <!-- grid Container 2 -->
         <div class="hero-image">
           <img src="html/home_html/img/image.png" alt="hero image" />
         </div>
@@ -200,9 +205,8 @@
           </div>
         </div>
       </div>
-      
     </div>
   </section>
-    
+  
   </body>
 </html>
