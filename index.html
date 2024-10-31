@@ -3,44 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="js/home_js/home.js" defer></script>
+
+    <!-- * Main CSS -->
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/header.css">
     <link
-      rel="shortcut icon"
-      href="https://static.vecteezy.com/system/resources/thumbnails/023/495/230/small_2x/real-estate-logo-1-free-png.png"
-      type="image/x-icon"
+    rel="shortcut icon"
+    href="https://static.vecteezy.com/system/resources/thumbnails/023/495/230/small_2x/real-estate-logo-1-free-png.png"
+    type="image/x-icon"
     />
-    <script src="../Nestly-RealState-System/js/home_js/home.js" defer></script>
-    <link rel="stylesheet" href="css/home_css/home.css" />
+    <script src="js/home.js" defer></script>
     <title>Home Page</title>
   </head>
   <body>
-    <!-- NAVBARS -->
-    <nav class="container">
-      <div class="navbar">
-        <div class="logo">
-          <span class="logo-title">Nestly</span>
-          <img
-            src="https://static.vecteezy.com/system/resources/thumbnails/023/495/230/small_2x/real-estate-logo-1-free-png.png"
-            alt="logo image"
-          />
+   <!-- * Header but i will come back here.  -->
+   <header>
+    <div class="container">
+       <!-- NAVBARS -->
+      <nav>
+        <div class="navbar">
+          <div class="logo">
+            <span class="logo-title">Nestly</span>
+            <img
+              src="https://static.vecteezy.com/system/resources/thumbnails/023/495/230/small_2x/real-estate-logo-1-free-png.png"
+              alt="logo image"
+            />
+          </div>
+          <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="html/About_html/about.html">About Us</a></li>
+            <li><a href="html/home_html/properties.html">Properties</a></li>
+          </ul>
+          <a href="#" class="login-button">Sign Up</a>
+  
+          <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
-        <ul class="nav-links">
-          <li><a href="home.html">Home</a></li>
-          <li><a href="html/About_html/about.html">About Us</a></li>
-          <li><a href="html/home_html/properties.html">Properties</a></li>
-        </ul>
-        <a href="#" class="login-button">Sign Up</a>
-
-        <div class="hamburger" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
+   
+   </header>
 
     <!-- HERO SECTION -->
     <section class="hero-section container">
+    <div class="container">
       <div class="hero-container">
         <div class="hero-content">
           <h1>Find Your Dream Home Property with Nestly Real Estate Company</h1>
@@ -68,9 +77,10 @@
           </div>
         </div>
         <div class="hero-image">
-          <img src="html/home_html/img/image.png" alt="hero image" />
+          <img src="Assets/image.png" alt="hero image" />
         </div>
       </div>
+    </div>
     </section>
 
     <!--~ FEATURED PROPERTIES -->
@@ -85,7 +95,7 @@
         <!-- Property Card One -->
         <div class="property-card">
           <img
-            src="./html/home_html/img/house-1.png"
+            src="./Assets/house-1.png"
             alt="image of house one"
           />
           <div class="property-info">
@@ -107,7 +117,7 @@
         <!-- Property Card Two -->
         <div class="property-card">
           <img
-            src="./html/home_html/img/house-2.png"
+            src="./Assets/house-2.png"
             alt="image of house one"
           />
           <div class="property-info">
@@ -130,7 +140,7 @@
         <!-- Property Card Three -->
         <div class="property-card">
           <img
-            src="./html/home_html/img/house-3.png"
+            src="./Assets/house-3.png"
             alt="image of house one"
           />
           <div class="property-info">
@@ -165,7 +175,7 @@
           <h3 class="">Exceptional Service</h3>
           <p>Our experience with Estatein was outstanding. Their team's dedication and professionalism made finding our dream home a breeze. Highly recommended!</p>
           <div class="testimonial-profile">
-            <img src="./html/home_html/img/profile-image-1.png" alt="profile image">
+            <img src="./Assets/profile-image-1.png" alt="profile image">
             <div class="profile">
               <h2>Wade Warren</h2>
               <p>USA, California</p>
@@ -181,7 +191,7 @@
           <h3>Efficient and Reliable</h3>
           <p>Estatein provided us with top-notch service. They helped us sell our property quickly and at a great price. We couldn't be happier with the results.</p>
           <div class="testimonial-profile">
-            <img src="./html/home_html/img/profile-image-2.png" alt="profile image">
+            <img src="./Assets/profile-image-2.png" alt="profile image">
             <div class="profile">
               <h2>Emelie Thom</h2>
               <p>USA, Florida</p>
@@ -197,7 +207,7 @@
           <h3>Trusted Advisors</h3>
           <p>The Estatein team guided us through the entire buying process. Their knowledge and commitment to our needs were impressive. Thank you for your support!</p>
           <div class="testimonial-profile">
-            <img src="./html/home_html/img/profile-image-3.png" alt="profile image">
+            <img src="./Assets/profile-image-3.png" alt="profile image">
             <div class="profile">
               <h2>John Mans</h2>
               <p>USA, Nevada</p>

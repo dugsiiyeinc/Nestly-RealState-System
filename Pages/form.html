@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auth - Login & Register</title>
+    <link rel="stylesheet" href="/css/formR.css"/>
+
+
+
+  </head>
+  <body>
+    <div class="layout">
+      <div class="auth-container">
+        <h1 id="form-title">Sign In</h1>
+        <form id="authForm">
+          <input type="text" id="username" placeholder="Enter your username" style="display: none;"/>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+          <input type="number" name="number" id="number" placeholder="Enter your Number" style="display: none;">
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter your password"
+            required
+          />
+          <input
+            type="password"
+            id="confirmPassword"
+            placeholder="Confirm your password"
+            style="display: none"
+          />
+          <button type="submit" id="authButton">Sign In</button>
+        </form>
+        <p id="authSwitch">
+          New to Nestly? <a href="#" id="switchForm">Register now</a>
+        </p>
+      </div>
+    </div>
+
+   <script src="/js/form.js"></script>
+   <!-- SweetAlert2 -->
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
