@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
 /* *Common CSS */
 * {
   padding: 0;
@@ -27,86 +28,6 @@ img {
   width: min(100%, 1120px);
   margin: 0 auto;
 }
-/* * header style  */
-header {
-  border-bottom: 1px solid #3b3b3b71;
-}
-/*^ NAV BARS */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 40px;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
-  font-size: 1.5rem;
-}
-.logo {
-  display: flex;
-  align-items: center;
-  font-size: 1.6rem;
-}
-.logo .logo-title {
-  font-weight: bold;
-  color: wheat;
-}
-.logo img {
-  width: 60px;
-  height: 60px;
-}
-.nav-links {
-  display: flex;
-  gap: 5rem;
-}
-.nav-links a {
-  color: #fff;
-  transition: all 0.5s;
-}
-.nav-links a:hover {
-  color: slateblue;
-}
-.login-button {
-  background-color: #333;
-  padding: 10px 15px;
-  border-radius: 7px;
-  border: none;
-  transition: background-color 0.3s ease;
-  font-weight: bold;
-  color: #fff;
-  &:hover {
-    color: slateblue !important;
-  }
-}
-/* =====================*/
-/* HAMBURGER MENU ICON */
-/* ====================*/
-.hamburger {
-  display: none;
-  font-size: 2rem;
-  color: var(--color-wheat);
-  cursor: pointer;
-}
-
-.hamburger span {
-  display: block;
-  height: 4px;
-  width: 30px;
-  background-color: var(--color-wheat);
-  margin: 6px auto;
-  transition: var(--transition);
-}
-
-.hamburger.active span:nth-child(1) {
-  transform: rotate(45deg) translate(6px, 8px);
-}
-
-.hamburger.active span:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger.active span:nth-child(3) {
-  transform: rotate(-45deg) translate(6px, -8px);
-}
-
 
 /* * Banner section style */
 .banner-section {
@@ -271,4 +192,93 @@ header {
     margin-bottom: 15px;
   }
 }
-/* Footer style */
+/* *Mobile device */
+@media only screen and  (max-width: 768px) {
+    
+  /* * Our Journey responsvei*/
+   .journey {
+       flex-direction: column-reverse;
+   }
+   .our-journey {
+       padding: 0 12px;
+   }
+   .customer-number{
+       grid-template-columns: repeat(2,1fr);
+       text-align: center;
+      
+       & .customer3 {
+           grid-column: 1/-1;
+           grid-row: 2/3;
+       } 
+   }
+   /* *Our Values responsvei */
+   .our-value-div {
+       flex-direction: column;
+       padding: 0 10px;
+       &  .Boxes {
+           grid-template-columns: 1fr;
+       }
+   }
+  
+   .Boxes .box {
+       border-right: none;
+       border-bottom: 2px solid #5857579b;
+       & .box:last-child{
+           border-bottom: none;
+        }
+    }
+    
+    /* *Our Achievements responsive*/
+    .our-Achiev {
+       padding: 0 12px;
+    }
+    .happy-clients{
+       grid-template-columns: 1fr;
+    }
+    
+ 
+}
+/* *TABLET DEVICE */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+   .journey {
+       flex-direction: column-reverse;
+   }
+   .our-journey {
+       padding: 0 12px;
+   }
+   .customer-number{
+       grid-template-columns: repeat(2,1fr);
+       text-align: center;
+      
+       & .customer3 {
+           grid-column: 1/-1;
+           grid-row: 2/3;
+       } 
+   }
+   /* *Our Values responsvei */
+   .our-value-div {
+       flex-direction: column;
+       padding: 0 10px;
+       &  .Boxes {
+           grid-template-columns: repeat(2,1fr);
+       }
+   }
+  
+   .Boxes .box {
+    
+       border-bottom: none;
+       & .box:last-child{
+           border-right: 1px solid #ccc;
+        }
+    }
+    
+    /* *Our Achievements responsive*/
+    .our-Achiev {
+       padding: 0 12px;
+    }
+    .happy-clients{
+       grid-template-columns: repeat(2,1fr);
+    }
+   
+}

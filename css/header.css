@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    /* Font and Color Variables */
+    --font-family: "Roboto", sans-serif;
+    --color-white: #fff;
+    --color-dark: #1a1a1a;
+    --color-wheat: wheat;
+    --color-light-grey: #555;
+    --color-blue: #007bff;
+  
+    /* Shadow and Transition Variables */
+    --shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+    --transition: all 0.3s ease;
+  
+    /* Font Size Variables */
+    --font-size-h1-large: 4rem;
+    --font-size-h1-medium: 3rem;
+    --font-size-h1-small: 2.5rem;
+    --font-size-p-large: 20px;
+    --font-size-p-medium: 1.5rem;
+    --font-size-p-small: 1rem;
+  }
+  header {
+    border-bottom: 1px solid #3b3b3b71;
+    padding: 10px 0;
+  }
+/* ===============*/
+/* NAVBAR STYLES */
+/* ===============*/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+    font-size: 1.5rem;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+  }
+  
+  .logo .logo-title {
+    font-weight: bold;
+    color: var(--color-wheat);
+  }
+  
+  .logo img {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex: 1;
+    a {
+        color: #fff;
+    }
+  }
+  
+  .nav-links a:hover {
+    color: var(--color-wheat);
+  }
+  
+  .login-button {
+    background-color: #333;
+    padding: 10px 15px;
+    border-radius: 7px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: var(--transition);
+    color: #fff;
+  
+  }
+  
+  .login-button:hover {
+    background-color: #555;
+  }
+  
+  /* =====================*/
+  /* HAMBURGER MENU ICON */
+  /* ====================*/
+  .hamburger {
+    display: none;
+    font-size: 2rem;
+    color: var(--color-wheat);
+    cursor: pointer;
+  }
+  
+  .hamburger span {
+    display: block;
+    height: 4px;
+    width: 30px;
+    background-color: var(--color-wheat);
+    margin: 6px auto;
+    transition: var(--transition);
+  }
+  
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 8px);
+  }
+  
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -8px);
+  }
+  
+
+  /* Responsvie */
+
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block;
+      font-size: 2.5rem;
+    }
+  
+    .nav-links,
+    .login-button {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      background: var(--color-dark);
+      padding: 1.3rem 0;
+      gap: 2rem;
+      z-index: 1;
+      transition: var(--transition);
+    }
+  
+    .nav-links.active,
+    .login-button.active {
+      display: flex;
+    }
+  
+    .login-button {
+      width: 100%;
+      margin-inline: auto;
+      background-color: var(--color-wheat);
+      color: var(--color-dark);
+      padding: 20px;
+    }
+  
+    
+  }
