@@ -238,6 +238,28 @@ img {
     
  
 }
+
+/* *==============
+  *Contat Page style
+  *=============== */
+  /* * Contact section style */
+.contact-section {
+  margin-bottom: 1.25rem;
+  padding: 1.5625rem 20px;
+}
+
+.contact-content h2 {
+  font-weight: 600;
+  font-size: 2.43rem;
+  line-height: 190%;
+  color: #fff;
+}
+.contact-content p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #999999;
+}
+
 /* *TABLET DEVICE */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
 
