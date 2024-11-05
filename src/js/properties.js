@@ -94,6 +94,10 @@ document.addEventListener("DOMContentLoaded", function () {
       bedrooms: document.getElementById("bedrooms").value,
       bathrooms: document.getElementById("bathrooms").value,
     };
+    // Chech if all options are selected 
+    const allSelected = Object.values(selectedData).every((value)=>{
+
+    });
   });
 
 });
