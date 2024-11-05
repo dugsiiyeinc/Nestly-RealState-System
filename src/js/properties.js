@@ -57,5 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const populateSelect = (id, options) => {
     const select = document.getElementById(id);
 
+    // Clear existing options, keep only the default placeholder
+    select.options.length = 1;
   };
 });
