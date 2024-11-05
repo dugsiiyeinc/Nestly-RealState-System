@@ -59,5 +59,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Clear existing options, keep only the default placeholder
     select.options.length = 1;
+
+    // Populate the select with options
+    options.forEach((option) => {
+      
+    });
   };
 });
