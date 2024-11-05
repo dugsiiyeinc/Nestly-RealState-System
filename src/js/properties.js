@@ -52,4 +52,9 @@ document.addEventListener("DOMContentLoaded", function () {
         </form>
   `;
   document.body.appendChild(homeSection);
+
+  // Function to populate select dropdowns based on local JSON data
+  const populateSelect = (id, options) => {
+
+  };
 });
