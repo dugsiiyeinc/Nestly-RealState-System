@@ -223,3 +223,29 @@ section {
   padding-left: 0.5rem;
 }
 
+.buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center; /* Center buttons */
+  margin-top: 1rem;
+}
+
+.buttons .myBtn {
+  flex: 1;
+  font-size: 1.6rem;
+  font-weight: 600;
+  background: var(--light-red);
+  color: var(--red);
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  text-align: center;
+}
+
+.buttons .myBtn:hover {
+  background-color: var(--red);
+  color: #fff;
+  transform: translateY(-3px); /* Slight lift on hover */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+}
+
