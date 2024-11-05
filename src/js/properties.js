@@ -115,6 +115,9 @@ document.addEventListener("DOMContentLoaded", function () {
       // Store selected data in local storage
       localStorage.setItem("propertySearch", JSON.stringify(selectedData));
 
+      // Redirect to result.html
+      window.location.href = "../html/result.html";
+    
     }
 
   });
