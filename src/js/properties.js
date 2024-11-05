@@ -91,6 +91,7 @@ document.addEventListener("DOMContentLoaded", function () {
       maxPrice: document.getElementById("maxPrice").value,
       status: document.getElementById("statuses").value,
       propertyType: document.getElementById("propertyTypes").value,
+      bedrooms: document.getElementById("bedrooms").value,
 
     };
   });
