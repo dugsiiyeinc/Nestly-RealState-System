@@ -71,5 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // populate select elements with data from local API
   populateSelect("neighborhoods", data.neighborhoods);
   populateSelect("cities", data.cities);
+  populateSelect("minPrice", data.prices.min);
+
 
 });
