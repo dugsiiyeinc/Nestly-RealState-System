@@ -187,3 +187,21 @@ section {
   background: var(--red);
   color: #fff;
 }
+
+.location {
+  padding: 1rem 0;
+}
+
+.location h3 {
+  font-size: 2.5rem;
+  color: var(--text-color);
+}
+
+.location p {
+  font-size: 1.5rem;
+  color: var(--light-red);
+  line-height: 1.5;
+  padding-top: 0.5rem;
+}
+
+
