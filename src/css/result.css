@@ -73,3 +73,45 @@ section {
 .heading span {
   color: var(--red);
 }
+
+/*=================*/
+/* FEATURED SECTION*/
+/*=================*/
+
+.featured-section .property-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.property-box {
+  border: 0.1rem solid var(--border-color);
+  box-shadow: var(--box-shadow);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background-color: #3b3636;
+  flex: 1 1 30rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.property-box:hover {
+  box-shadow: var(--hover-shadow);
+}
+
+.image-wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 25rem;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s ease;
+}
+
+.property-box:hover .image-wrapper img {
+  transform: scale(1.1);
+}
