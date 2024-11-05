@@ -80,6 +80,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Handle form submission
   const form = document.getElementById("propertyForm");
-
+  form.addEventListener("submit", (e)=>{
+    e.preventDefault(); // Prevent the default form submission
+  });
 
 });
