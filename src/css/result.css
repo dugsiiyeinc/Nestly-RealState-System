@@ -275,3 +275,59 @@ section {
   box-shadow: 0 8px 30px #0000001a;
 }
 
+.agent-card {
+  background-color: #3b3636;
+  text-align: center;
+  border: 0.1rem solid var(--border-color);
+  box-shadow: 0 4px 15px #0000001a;
+  border-radius: 1rem;
+  padding: 3rem 2rem;
+  position: relative;
+  width: 26rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.agent-card:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 8px 20px #00000026;
+}
+
+.agent-card .icon-email,
+.agent-card .icon-phone {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  color: var(--text-color);
+  font-size: 1.8rem;
+  transition: color 0.3s ease;
+}
+
+.icon-email:hover,
+.icon-phone:hover {
+  color: var(--red);
+}
+
+.agent-card img {
+  border-radius: 50%;
+  box-shadow: 0 0 0 0.5rem rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  height: 10rem;
+  width: 10rem;
+  margin: 1.5rem 0;
+}
+
+.agent-name {
+  font-size: 2.2rem;
+  color: var(--text-color);
+  margin: 1rem 0;
+  font-weight: 600;
+}
+
+.agent-role {
+  font-size: 1.6rem;
+  color: var(--red);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+
