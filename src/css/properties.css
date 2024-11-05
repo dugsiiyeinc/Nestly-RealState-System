@@ -114,3 +114,16 @@ section{
     gap: 1.5rem;
     margin-top: 2.5rem;
 }
+
+.home form .inputBox input,
+.home form .inputBox select {
+    flex: 1 1 25rem;
+    border: 0.1rem solid var(--border-color);
+    box-shadow: var(--box-shadow);
+    font-size: 1.6rem;
+    padding: 1.2rem;
+    border-radius: 0.3rem;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+    background-color: #333; /* Darker input background */
+    color: var(--text-color); /* Light text in inputs */
+}
