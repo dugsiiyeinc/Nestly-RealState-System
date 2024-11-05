@@ -84,7 +84,9 @@ document.addEventListener("DOMContentLoaded", function () {
     e.preventDefault(); // Prevent the default form submission
 
     // Gather selected values
-    const selectedData = {};
+    const selectedData = {
+      neighborhood: document.getElementById("neighborhoods").value,
+    };
   });
 
 });
