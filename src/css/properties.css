@@ -76,3 +76,11 @@ section{
     z-index: 1; /* Ensure form is above overlay */
     color: var(--text-color); /* Light text inside the form */
 }
+
+.home form h3 {
+    text-align: center;
+    color: var(--text-color); /* Light heading text */
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+}
