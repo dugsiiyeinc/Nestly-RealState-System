@@ -10,6 +10,9 @@
     --box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.1); /* Softer shadow for dark background */
 }
 
+/*==========*/
+/*CSS RESET*/
+/*=========*/
 * {
     font-family: 'Nunito', sans-serif;
     margin: 0;
@@ -20,6 +23,9 @@
     text-decoration: none;
     text-transform: capitalize;
 }
+/*============*/
+/*BASIC STYLE*/
+/*===========*/
 html {
     font-size: 62.5%;
     overflow-x: hidden;
@@ -35,4 +41,15 @@ body {
 
 section{
     padding: 3rem 9%;
+}
+/*=============*/
+/*HOME SECTION*/
+/*=============*/
+.home {
+    min-height: 100vh;
+    background: url("../images/background-image.png") no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
