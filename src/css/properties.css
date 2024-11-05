@@ -132,3 +132,17 @@ section{
     border-color: var(--red);
     box-shadow: 0 0.5rem 1.5rem rgba(255, 90, 60, 0.4);
 }
+
+.home form .btn {
+    width: 100%;
+    margin-top: 2.5rem;
+    padding: 1.3rem;
+    background: var(--red);
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
