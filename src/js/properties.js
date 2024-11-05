@@ -34,4 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
   homeSection.className = "home";
   homeSection.id = "home";
 
+  // Building the form structure with empty select elements
+  homeSection.innerHTML = ``;
+
 });
