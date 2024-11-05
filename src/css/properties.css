@@ -84,3 +84,9 @@ section{
     font-weight: 600;
     margin-bottom: 2.5rem;
 }
+
+.home form .buttons-container {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center; /* Center-aligns buttons */
+}
