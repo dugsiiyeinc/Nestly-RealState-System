@@ -204,4 +204,22 @@ section {
   padding-top: 0.5rem;
 }
 
+.details {
+  padding: 0.5rem 0;
+  display: flex;
+}
+
+.details h3 {
+  flex: 1;
+  padding: 1rem;
+  border: 0.1rem solid var(--border-color);
+  color: #999;
+  font-size: 1.3rem;
+  transition: background 0.2s ease;
+}
+
+.details h3 i {
+  color: var(--text-color);
+  padding-left: 0.5rem;
+}
 
