@@ -331,3 +331,31 @@ section {
   letter-spacing: 0.05rem;
 }
 
+.social-share {
+  padding-top: 1.5rem;
+}
+
+.social-icon {
+  margin: 0 0.5rem;
+  height: 4rem;
+  width: 4rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--light-red), var(--red));
+  color: #fff;
+  border-radius: 0.8rem;
+  font-size: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+.agent-card .buttons {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
