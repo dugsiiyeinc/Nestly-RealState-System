@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- * Main CSS -->
-    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/about.css" />
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!-- * font awesoem -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
     rel="shortcut icon"
     href="https://static.vecteezy.com/system/resources/thumbnails/023/495/230/small_2x/real-estate-logo-1-free-png.png"
     type="image/x-icon"
     />
-    <script src="js/home.js" defer></script>
+    <!-- <script src="js/home.js" defer></script> -->
     <title>Home Page</title>
   </head>
   <body>
@@ -20,8 +23,8 @@
    <header>
     <div class="container">
        <!-- NAVBARS -->
-      <nav>
-        <div class="navbar">
+      <nav class="navbar  ">
+      
           <div class="logo">
             <span class="logo-title">Nestly</span>
             <img
@@ -29,6 +32,7 @@
               alt="logo image"
             />
           </div>
+          <!-- * Nav links  -->
           <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="pages/about.html">About Us</a></li>
@@ -38,60 +42,72 @@
           <a href="pages/form.html" class="login-button">Sign Up</a>
   
           <div class="hamburger" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
           </div>
-        </div>
+        
       </nav>
     </div>
-   
    </header>
 
-    <!-- HERO SECTION -->
-    <section class="hero-section container">
-    <div class="container">
-      <div class="hero-container">
-        <div class="hero-content">
-          <h1>Find Your Dream Home Property with Nestly Real Estate Company</h1>
-          <p>
-            Explore our wide range of properties and find your perfect home.
-            Your journey to finding the perfect property begins here. Explore
-            our listings to find the home that matches your dreams.
-          </p>
-          <div class="content-review">
-            <!-- Count 1 -->
-            <div class="content-count">
-              <span class="review-count-number">200 + </span>
-              <span class="review-feelings">Happy Customers</span>
-            </div>
-            <!-- Count 2 -->
-            <div class="content-count">
-              <span class="review-count-number">200 + </span>
-              <span class="review-feelings">Properties Sold</span>
-            </div>
-            <!-- Count 3 -->
-            <div class="content-count">
-              <span class="review-count-number">200 + </span>
-              <span class="review-feelings">Houses Available</span>
-            </div>
+     <!-- * Banner Section -->
+     <section class="banner-section">
+      <div class="container">
+         <div class="imgaes-stars">
+          <img class="star bigger" src="/Assets/img/little-Star.png" alt="little star">
+          <img class="star middle" src="/Assets/img/little-Star.png" alt="little star">
+          <img class="star small" src="/Assets/img/little-Star.png" alt="little star">
+         </div>
+           <!-- *jouner div -->
+          <div class="journey">
+              <div class="our-journey">
+                  <div class="content-journey homeh2">
+                      <h2>Discover Your Dream Property with Nestly</h2>
+                      <p>Our story is one of continuous growth and evolution. We started as a small team with big dreams, determined to create a real estate platform that transcended the ordinary. Over the years, we've expanded our reach, forged valuable partnerships, and gained the trust of countless clients.</p>
+                  </div>
+                  <div class="customer-number">
+                      <div >
+                          <h3>200+</h3>
+                          <p>Happy Customers</p>
+                      </div>
+                      <div>
+                          <h3>10K+</h3>
+                          <p>Properties For Clients</p>
+                      </div>
+                      <div class="customer3">
+                          <h3>16+</h3>
+                          <p>Years of Experience</p>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- * image house -->
+              <div class="journey-img">
+                  <img src="/Assets/image.png" alt="House Imge">
+              </div>
           </div>
-        </div>
-        <div class="hero-image">
-          <img src="Assets/image.png" alt="hero image" />
-        </div>
       </div>
-    </div>
     </section>
+
 
     <!--~ FEATURED PROPERTIES -->
     <section class="featured-section">
-      <h1 id="featured-header">Featured Propertes</h1>
-      <p id="featured-paragraph">
-        Explore our handpicked selection of featured properties. Each listing
-        offers a glimpse into exceptional homes and investments available
-        through Estatein. Click "View Details" for more information.
-      </p>
+      <div class="container">
+        <div class="imgaes-stars">
+          <img class="star bigger" src="/Assets/img/little-Star.png" alt="little star">
+          <img class="star middle" src="/Assets/img/little-Star.png" alt="little star">
+          <img class="star small" src="/Assets/img/little-Star.png" alt="little star">
+         </div>
+        <div class="feature-content">
+          <h2>Featured Propertes</h2>
+          <p id="featured-paragraph">
+            Explore our handpicked selection of featured properties. Each listing
+            offers a glimpse into exceptional homes and investments available
+            through Estatein. Click "View Details" for more information.
+          </p>
+        </div>
+       
       <div class="property-cards">
         <!-- Property Card One -->
         <div class="property-card">
@@ -110,7 +126,7 @@
               <span>🛁 3-Bathroom</span>
               <span>🏠 Villa</span>
             </div>
-            <div class="property-price">Price $550,000</div>
+            <span class="property-price">Price $550,000</span>
             <button class="property-button">View Property Details</button>
           </div>
         </div>
@@ -133,7 +149,7 @@
               <span>🛁 3-Bathroom</span>
               <span>🏠 Villa</span>
             </div>
-            <div class="property-price">Price $550,000</div>
+            <span class="property-price">Price $550,000</span>
             <button class="property-button">View Property Details</button>
           </div>
         </div>
@@ -156,16 +172,23 @@
               <span>🛁 3-Bathroom</span>
               <span>🏠 Villa</span>
             </div>
-            <div class="property-price">Price $550,000</div>
+            <span class="property-price">Price $550,000</span>
             <button class="property-button">View Property Details</button>
           </div>
         </div>
+      </div>
       </div>
     </section>
 
   <!--~TESTOMINIAL SECTION -->
   <section class="testimonial">
-    <h1>What Our Clients Say</h1>
+   <div class="container">
+    <div class="imgaes-stars">
+      <img class="star bigger" src="/Assets/img/little-Star.png" alt="little star">
+      <img class="star middle" src="/Assets/img/little-Star.png" alt="little star">
+      <img class="star small" src="/Assets/img/little-Star.png" alt="little star">
+     </div>
+    <h2>What Our Clients Say</h2>
     <p>Read the success stories and heartfelt testimonials from our valued clients. Discover why they chose Estatein for their real estate needs.</p>
     <div class="testimonial-cards">
       
@@ -217,7 +240,79 @@
         </div>
       </div>
     </div>
+   </div>
   </section>
   
+  <!-- ** footer -->
+  <footer id="footer-section">
+    <div class="container">
+        <div class="left-right-sides">
+            <div class="left-side">
+                <p><img src="https://static.vecteezy.com/system/resources/thumbnails/023/495/230/small_2x/real-estate-logo-1-free-png.png" alt="logo "> <span>Nestly</span></p>
+                <form class="SendEmail">
+                    <input type="email" name="email" id="email" placeholder="Enter your email here">
+                    <button class="telegram" type="submit"><img src="https://image.similarpng.com/thumbnail/2021/01/Telegram-icon-with-black-color-on-transparent-background-PNG.png" alt="sent message pic"></button>
+                </form>
+            </div>
+            <div class="right-side">
+                <div class="home-list">
+                    <h3>Home</h3>
+                    <ul>
+                        <li><a href="#">Hero Section</a></li>
+                        <li><a href=""> Features</a></li>
+                        <li><a href="">Properties</a></li>
+                        <li><a href=""> Testimonials</a></li>
+                    </ul>
+                </div>
+                <div class="home-list">
+                    <h3> About Us</h3>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href=""> Our Works</a></li>
+                        <li><a href="">Properties</a></li>
+                        <li><a href=""> Our Team</a></li>
+                        <li><a href=""> How It Works</a></li>
+                    </ul>
+                </div>
+                <div class="home-list">
+                    <h3>  Properties</h3>
+                    <ul>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href=""> Categories</a></li>
+                    </ul>
+                </div>
+                <div class="home-list">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Valuation Mastery</a></li>
+                        <li><a href="">Strategic Marketing</a></li>
+                        <li><a href="">Negotiation Wizardry</a></li>
+                        <li><a href="">Closing Success</a></li>
+                        <li><a href="">Property Management</a></li>
+                    </ul>
+                </div>
+                <div class="home-list">
+                    <h3> Contact Us</h3>
+                    <ul>
+                        <li><a href="#">Contact Form</a></li>
+                        <li><a href="">Our Offices</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="socail-media">
+            <div class="term-condition">
+               <p> @2023 Estatein. All Rights Reserved.<span>Terms & Conditions</span></p>
+            </div>
+            <ul>
+                <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+    </div>
+   </footer>
+  <script src="Js/form.js"></script>
   </body>
 </html>
