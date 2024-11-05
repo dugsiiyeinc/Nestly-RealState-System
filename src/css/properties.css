@@ -146,3 +146,7 @@ section{
     text-align: center;
     transition: background 0.3s ease, transform 0.2s ease;
 }
+.home form .btn:hover {
+    background: #cc4831; /* Darker shade for hover effect */
+    transform: scale(1.05);
+}
