@@ -87,6 +87,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const selectedData = {
       neighborhood: document.getElementById("neighborhoods").value,
       city: document.getElementById("cities").value,
+      minPrice: document.getElementById("minPrice").value,
+
 
     };
   });
