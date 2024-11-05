@@ -90,3 +90,15 @@ section{
     gap: 1.5rem;
     justify-content: center; /* Center-aligns buttons */
 }
+
+.home form .buttons-container .btn {
+    flex: 1;
+    padding: 1.2rem;
+    background: var(--red);
+    color: #fff;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.2s ease; /* Added hover transform */
+}
