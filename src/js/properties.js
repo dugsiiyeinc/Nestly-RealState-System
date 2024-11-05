@@ -112,6 +112,8 @@ document.addEventListener("DOMContentLoaded", function () {
        // Alert if any field is not selected
        alert("Please select an option for all fields before submitting.");
     }else{
+      // Store selected data in local storage
+      localStorage.setItem("propertySearch", JSON.stringify(selectedData));
 
     }
 
