@@ -26,3 +26,9 @@ html {
     scroll-behavior: smooth;
     scroll-padding-top: 7rem;
 }
+
+body {
+    background: var(--dark-bg);
+    color: var(--text-color);
+    line-height: 1.6; /* Improved readability */
+}
