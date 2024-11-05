@@ -90,6 +90,7 @@ document.addEventListener("DOMContentLoaded", function () {
       minPrice: document.getElementById("minPrice").value,
       maxPrice: document.getElementById("maxPrice").value,
       status: document.getElementById("statuses").value,
+      propertyType: document.getElementById("propertyTypes").value,
 
     };
   });
