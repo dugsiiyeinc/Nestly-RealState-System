@@ -102,3 +102,8 @@ section{
     font-weight: 600;
     transition: background 0.3s ease, transform 0.2s ease; /* Added hover transform */
 }
+
+.home form .buttons-container .btn:hover {
+    background: #cc4831; /* Darker shade for hover effect */
+    transform: scale(1.05); /* Slightly larger on hover */
+}
