@@ -29,5 +29,8 @@ document.addEventListener("DOMContentLoaded", function () {
     ],
     bathrooms: ["1 Bath", "1.5 Baths", "2 Baths", "3 Baths", "4+ Baths"],
   };
+  // Create home section
   const homeSection = document.createElement("section");
+  homeSection.className = "home";
+
 });
