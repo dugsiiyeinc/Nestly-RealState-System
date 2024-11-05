@@ -75,6 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
   populateSelect("maxPrice", data.prices.max);
   populateSelect("statuses", data.statuses);
   populateSelect("propertyTypes", data.propertyTypes);
+  populateSelect("bedrooms", data.bedrooms);
 
 
 
