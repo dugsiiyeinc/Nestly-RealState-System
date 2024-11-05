@@ -35,6 +35,21 @@ document.addEventListener("DOMContentLoaded", function () {
   homeSection.id = "home";
 
   // Building the form structure with empty select elements
-  homeSection.innerHTML = ``;
+  homeSection.innerHTML = `
+  <form id="propertyForm">
+            <h3>Find Your Perfect Home</h3>
+            <div class="inputBox">
+                <select id="neighborhoods"><option disabled hidden selected>Neighborhood</option></select>
+                <select id="cities"><option disabled hidden selected>City</option></select>
+                <select id="minPrice"><option disabled hidden selected>Minimum Price</option></select>
+                <select id="maxPrice"><option disabled hidden selected>Maximum Price</option></select>
+                <select id="statuses"><option disabled hidden selected>Property Status</option></select>
+                <select id="propertyTypes"><option disabled hidden selected>Property Type</option></select>
+                <select id="bedrooms"><option disabled hidden selected>Bedrooms</option></select>
+                <select id="bathrooms"><option disabled hidden selected>Bathrooms</option></select>
+            </div>
+            <input type="submit" value="Search Property" class="btn">
+        </form>
+  `;
 
 });
