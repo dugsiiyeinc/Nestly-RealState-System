@@ -20,5 +20,12 @@ document.addEventListener("DOMContentLoaded", function () {
       "Storage Unit",
       "Farm Land",
     ],
+    bedrooms: [
+      "Studio",
+      "1 Bedroom",
+      "2 Bedrooms",
+      "3 Bedrooms",
+      "4+ Bedrooms",
+    ],
   };
 });
