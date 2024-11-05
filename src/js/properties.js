@@ -63,6 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Populate the select with options
     options.forEach((option) => {
       const opt = document.createElement("option");
+      opt.value = option;
 
 
     });
