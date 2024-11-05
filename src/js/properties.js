@@ -32,5 +32,6 @@ document.addEventListener("DOMContentLoaded", function () {
   // Create home section
   const homeSection = document.createElement("section");
   homeSection.className = "home";
+  homeSection.id = "home";
 
 });
