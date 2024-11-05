@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
       status: document.getElementById("statuses").value,
       propertyType: document.getElementById("propertyTypes").value,
       bedrooms: document.getElementById("bedrooms").value,
-
+      bathrooms: document.getElementById("bathrooms").value,
     };
   });
 
