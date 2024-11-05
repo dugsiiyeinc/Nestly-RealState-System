@@ -107,5 +107,12 @@ document.addEventListener("DOMContentLoaded", function () {
         value !== "Bedrooms" &&
         value !== "Bathrooms"
     );
+
+    if (!allSelected) {
+      
+    }else{
+      
+    }
+
   });
 });
