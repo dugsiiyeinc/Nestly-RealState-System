@@ -82,6 +82,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("propertyForm");
   form.addEventListener("submit", (e)=>{
     e.preventDefault(); // Prevent the default form submission
+
+    // Gather selected values
+    const selectedData = {};
   });
 
 });
