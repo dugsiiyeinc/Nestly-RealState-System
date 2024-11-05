@@ -133,3 +133,12 @@ function switchFormAuto() {
         authSwitch.innerHTML = `Already have an account <a href="#" id="switchForm">Sign In</a>`
     }
 }
+
+
+// ** Menu bar or toggleMenu
+function toggleMenu(){
+    const navbar = document.querySelector('.navbar')
+    const loginButton = document.getElementsByClassName('login-button')[1]
+    navbar.classList.toggle('active')
+    loginButton.classList.toggle('active')
+}
