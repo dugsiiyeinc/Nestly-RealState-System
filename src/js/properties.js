@@ -78,4 +78,8 @@ document.addEventListener("DOMContentLoaded", function () {
   populateSelect("bedrooms", data.bedrooms);
   populateSelect("bathrooms", data.bathrooms);
 
+  // Handle form submission
+  const form = document.getElementById("propertyForm");
+
+
 });
