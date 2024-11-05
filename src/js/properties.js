@@ -72,6 +72,8 @@ document.addEventListener("DOMContentLoaded", function () {
   populateSelect("neighborhoods", data.neighborhoods);
   populateSelect("cities", data.cities);
   populateSelect("minPrice", data.prices.min);
+  populateSelect("maxPrice", data.prices.max);
+
 
 
 });
