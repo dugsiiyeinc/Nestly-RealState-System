@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
       bedrooms: document.getElementById("bedrooms").value,
       bathrooms: document.getElementById("bathrooms").value,
     };
-    // Chech if all options are selected
+    // Check if all options are selected
     const allSelected = Object.values(selectedData).every(
       (value) =>
         value !== "" &&
@@ -109,16 +109,14 @@ document.addEventListener("DOMContentLoaded", function () {
     );
 
     if (!allSelected) {
-       // Alert if any field is not selected
-       alert("Please select an option for all fields before submitting.");
-    }else{
+      // Alert if any field is not selected
+      alert("Please select an option for all fields before submitting.");
+    } else {
       // Store selected data in local storage
       localStorage.setItem("propertySearch", JSON.stringify(selectedData));
 
       // Redirect to result.html
-      window.location.href = "../html/result.html";
-    
+      window.location.href = "../html/result.html"; // Updated path for redirection
     }
-
   });
 });
