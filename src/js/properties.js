@@ -89,8 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
       city: document.getElementById("cities").value,
       minPrice: document.getElementById("minPrice").value,
       maxPrice: document.getElementById("maxPrice").value,
-
-
+      status: document.getElementById("statuses").value,
 
     };
   });
