@@ -13,5 +13,12 @@ document.addEventListener("DOMContentLoaded", function () {
       "Partially Furnished",
       "Unfurnished",
     ],
+    propertyTypes: [
+      "Condo",
+      "Villa",
+      "Retail Store",
+      "Storage Unit",
+      "Farm Land",
+    ],
   };
 });
