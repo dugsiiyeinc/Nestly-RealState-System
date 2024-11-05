@@ -154,3 +154,36 @@ section {
 .icons a:hover {
   background: var(--red);
 }
+
+.property-content {
+  padding: 1.5rem;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+}
+
+.price h3 {
+  color: var(--red);
+  font-size: 2rem;
+  margin-right: auto;
+}
+
+.price a {
+  color: var(--text-color);
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+  border-radius: 0.5rem;
+  height: 4rem;
+  width: 4rem;
+  line-height: 4rem;
+  text-align: center;
+  background: var(--light-red);
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.price a:hover {
+  background: var(--red);
+  color: #fff;
+}
