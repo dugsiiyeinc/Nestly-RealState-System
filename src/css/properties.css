@@ -127,3 +127,8 @@ section{
     background-color: #333; /* Darker input background */
     color: var(--text-color); /* Light text in inputs */
 }
+.home form .inputBox input:focus,
+.home form .inputBox select:focus {
+    border-color: var(--red);
+    box-shadow: 0 0.5rem 1.5rem rgba(255, 90, 60, 0.4);
+}
