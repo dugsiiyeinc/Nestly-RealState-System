@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const opt = document.createElement("option");
       opt.value = option;
       opt.textContent = option;
-
+      select.appendChild(opt);
 
     });
   };
