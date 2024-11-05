@@ -378,3 +378,31 @@ section {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   transform: translateY(-0.3rem);
 }
+
+/*==============*/
+/*MEDIA QUERIES*/
+/*==============*/
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  header {
+    padding: 1.5rem 1rem;
+  }
+
+  section {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  .contact .row form .inputBox input {
+    width: 100%;
+  }
+}
