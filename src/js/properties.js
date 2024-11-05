@@ -27,5 +27,6 @@ document.addEventListener("DOMContentLoaded", function () {
       "3 Bedrooms",
       "4+ Bedrooms",
     ],
+    bathrooms: ["1 Bath", "1.5 Baths", "2 Baths", "3 Baths", "4+ Baths"],
   };
 });
