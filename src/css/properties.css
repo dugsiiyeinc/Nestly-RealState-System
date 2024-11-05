@@ -62,3 +62,17 @@ section{
     bottom: 0;
     background: rgba(0, 0, 0, 0.6); /* Dark overlay for better text contrast */
 }
+
+.home form {
+    position: relative;
+    margin-top: 7rem;
+    background: var(--light-bg);
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow);
+    border: 0.1rem solid var(--border-color);
+    width: 70rem;
+    max-width: 90%; /* Ensures form is responsive */
+    padding: 3rem; /* Enhanced padding for aesthetics */
+    z-index: 1; /* Ensure form is above overlay */
+    color: var(--text-color); /* Light text inside the form */
+}
