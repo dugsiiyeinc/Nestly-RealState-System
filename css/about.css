@@ -6,6 +6,10 @@
   margin: 0;
   box-sizing: border-box;
 }
+:root {
+  --primary-color : slateblue;
+  --secondary-color : #fff;
+}
 button,
 a,
 ul {
@@ -16,7 +20,7 @@ ul {
 body {
   font-family: "Urbanist", sans-serif;
   background-color: #121111;
-  color: #fff;
+  color: var(--secondary-color);
 }
 p {
   color: #999999;
@@ -28,11 +32,213 @@ img {
   width: min(100%, 1120px);
   margin: 0 auto;
 }
+.imgaes-stars{
+  display: flex;
+  padding-left: 5px;
+}
+/* *===========================
+*======> Home Page
+*============================== */
+
+/*===================*/
+/*FEATURED PROPERTIES*/
+/*===================*/
+.featured-properties {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+}
+
+
+.feature-content {
+  margin-block: 1rem 2.5rem;
+  padding: 0 10px;
+}
+.feature-content h2 {
+  font-size: 2.5rem;
+}
+.feature-content p {
+  
+    margin-top: 1rem;
+    color: #555;
+    font-weight: 500;
+    font-size: 1.2rem;
+    
+}
+.property-cards {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+
+.property-card {
+
+  border: 1px solid #4444448e;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 49%);
+}
+
+.property-card img {
+  transform: scale(1.05);
+  border-radius: 15px;
+  padding: 10px;
+}
+
+
+
+.property-info {
+  padding: 1.3rem 0;
+
+}
+
+.property-info h3 {
+  font-size: 1.7rem;
+  color: #fff;
+}
+
+.property-info p {
+  color: #bbb;
+  font-size: 1.2rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.property-info a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.property-features {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  gap: 1rem;
+  font-size: 1rem;
+  color: #888;
+  margin-bottom: 2rem;
+}
+
+.property-price {
+  font-weight: bold;
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.property-button {
+  /* width: 100%; */
+  padding: 0.8rem;
+  background-color: slateblue;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-left: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.property-button:hover {
+  background-color: #7f5a15;
+}
+
+/*============*/
+/* TESTIMONIAL*/
+/*============*/
+.testimonial {
+  text-align: center;
+  padding: 4rem 1.5rem;
+  /* background-color: var(--color-dark); */
+}
+
+.testimonial h2 {
+  font-size: 2.5rem;
+  margin-block: 0.5rem;
+  color: #fff;
+  text-align: left;
+}
+
+.testimonial p {
+  font-size: 1.1rem;
+  color: #666;
+ 
+  margin: 0 0  2rem;
+}
+
+.testimonial-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1700px;
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  /* background: var(--color-light-grey); */
+  box-shadow: 0 4px 8px rgb(0 0 0 / 49%);
+  border-radius: 8px;
+  padding: 2rem;
+  transition: transform 0.3s;
+  border: 1px solid #333;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial-info span {
+  font-size: 1.2rem;
+  color: #ffd700;
+}
+
+.testimonial-info h3 {
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 0.5rem 0 1rem;
+}
+
+.testimonial-info p {
+  font-size: 1rem;
+  /* color: var(--color-white); */
+  line-height: 1.6;
+}
+
+.testimonial-profile {
+  display: flex;
+  /* align-items: center; */
+  /* margin-top: 1.5rem; */
+  gap: 1.1rem;
+  color: #fff;
+}
+
+.testimonial-profile img {
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+ 
+}
+
+.profile h2 {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.profile p {
+  font-size: 0.9rem;
+  color: #f9f9f9;
+}
+
+
+/* *===========================
+*======> About Page
+*============================== */
 
 /* * Banner section style */
 .banner-section {
   margin-bottom: 1.25rem;
-  padding: 1.5625rem 0;
+  padding-block: 1.5625rem ;
 }
 .star {
   width: 1.5rem;
@@ -51,7 +257,7 @@ img {
 .journey {
   display: flex;
   gap: 1rem;
-  color: #fff;
+  color: var(--secondary-color);
 }
 .our-journey {
   display: flex;
@@ -65,7 +271,7 @@ img {
   font-weight: 600;
   font-size: 2.43rem;
   line-height: 190%;
-  color: #fff;
+  color:  var(--secondary-color);
 }
 .content-journey p {
   font-size: 1rem;
@@ -111,7 +317,7 @@ img {
 }
 .value-text {
   flex-basis: 50%;
-  color: #fff;
+  color: var(--secondary-color);
   align-content: center;
 }
 .value-text h2 {
@@ -141,7 +347,7 @@ img {
 .Boxes .box img {
   width: 50px;
   height: 50px;
-  border: 1px slateblue solid;
+  border: 1px var(--primary-color) solid;
   padding: 10px;
   border-radius: 50%;
   display: flex;
@@ -159,7 +365,7 @@ img {
   gap: 0.8rem;
   & span {
     font-size: 1.2rem;
-    color: #fff;
+    color:  var(--secondary-color);
     font-weight: 600;
   }
 }
@@ -194,6 +400,33 @@ img {
 }
 /* *Mobile device */
 @media only screen and  (max-width: 768px) {
+
+
+  /* *===========================
+*======> Home Page
+*============================== */
+
+
+.property-cards {
+  flex-direction: column;
+}
+.property-button{
+  float: right;
+}
+.testimonial-cards {
+  grid-template-columns: 1fr;
+}
+.testimonial {
+  padding-inline: 10px;
+}
+.testimonial h2 {
+  font-size: 2rem;
+}
+
+  /* *===========================
+*======> About Page
+*============================== */
+
     
   /* * Our Journey responsvei*/
    .journey {
@@ -252,7 +485,7 @@ img {
   font-weight: 600;
   font-size: 2.43rem;
   line-height: 190%;
-  color: #fff;
+  color:  var(--secondary-color);
 }
 .contact-content p {
   font-size: 1rem;
@@ -291,13 +524,13 @@ textarea {
   border-radius: 5px;
   margin-bottom: 20px;
   background-color: #333232;
-  color: #fff;
+  color:  var(--secondary-color);
   border: 1px solid rgba(66, 66, 66, 0.8);
 }
 .form-contact input:focus,
 textarea:focus {
-  border: 1px solid slateblue;
-  box-shadow: 0 0px 5px 2px slateblue;
+  border: 1px solid var(--primary-color);
+  box-shadow: 0 0px 5px 2px var(--primary-color);
 }
 textarea {
   margin-top: 15px;
@@ -307,7 +540,7 @@ textarea {
   margin: 0 auto;
   padding: 15px;
   background-color: #703bf7;
-  color: #fff;
+  color:  var(--secondary-color);
   cursor: pointer;
   border: none;
   border-radius: 5px;
@@ -350,7 +583,7 @@ textarea {
   border-radius: 10px;
   max-width: 400px;
   width: 100%;
-  color: white;
+  color:  var(--secondary-color);
   h1{
       text-align: center;
       margin-bottom: 20px;
@@ -360,7 +593,7 @@ textarea {
   background-color: #333;
 }
 .auth-container input.filled {
-  background-color: #fff;
+  background-color:  var(--secondary-color);
   color: #333;
 }
 .auth-container input {
@@ -370,18 +603,18 @@ textarea {
   margin: 10px 0;
 background-color: #444;
   border: 1px solid #444;
-  color: white;
+  color:  var(--secondary-color);
   border-radius: 5px;
   outline: none;
   &:hover {
-      outline: 1px solid slateblue;
+      outline: 1px solid var(--primary-color);
   }
 }
 
 .auth-container button {
   width: 100%;
   padding: 10px;
-  background-color: slateblue;
+  background-color: var(--primary-color);
   border: none;
   color: white;
   cursor: pointer;
