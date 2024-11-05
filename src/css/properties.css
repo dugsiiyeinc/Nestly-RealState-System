@@ -107,3 +107,10 @@ section{
     background: #cc4831; /* Darker shade for hover effect */
     transform: scale(1.05); /* Slightly larger on hover */
 }
+
+.home form .inputBox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+}
