@@ -51,5 +51,5 @@ document.addEventListener("DOMContentLoaded", function () {
             <input type="submit" value="Search Property" class="btn">
         </form>
   `;
-
+  document.body.appendChild(homeSection);
 });
