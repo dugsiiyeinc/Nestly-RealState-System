@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Handle form submission
   const form = document.getElementById("propertyForm");
-  form.addEventListener("submit", (e)=>{
+  form.addEventListener("submit", (e) => {
     e.preventDefault(); // Prevent the default form submission
 
     // Gather selected values
@@ -94,10 +94,18 @@ document.addEventListener("DOMContentLoaded", function () {
       bedrooms: document.getElementById("bedrooms").value,
       bathrooms: document.getElementById("bathrooms").value,
     };
-    // Chech if all options are selected 
-    const allSelected = Object.values(selectedData).every((value)=>{
-
-    });
+    // Chech if all options are selected
+    const allSelected = Object.values(selectedData).every(
+      (value) =>
+        value !== "" &&
+        value !== "Neighborhood" &&
+        value !== "City" &&
+        value !== "Minimum Price" &&
+        value !== "Maximum Price" &&
+        value !== "Property Status" &&
+        value !== "Property Type" &&
+        value !== "Bedrooms" &&
+        value !== "Bathrooms"
+    );
   });
-
 });
