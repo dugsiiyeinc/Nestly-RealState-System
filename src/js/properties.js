@@ -76,7 +76,6 @@ document.addEventListener("DOMContentLoaded", function () {
   populateSelect("statuses", data.statuses);
   populateSelect("propertyTypes", data.propertyTypes);
   populateSelect("bedrooms", data.bedrooms);
-
-
+  populateSelect("bathrooms", data.bathrooms);
 
 });
