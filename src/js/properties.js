@@ -88,6 +88,8 @@ document.addEventListener("DOMContentLoaded", function () {
       neighborhood: document.getElementById("neighborhoods").value,
       city: document.getElementById("cities").value,
       minPrice: document.getElementById("minPrice").value,
+      maxPrice: document.getElementById("maxPrice").value,
+
 
 
     };
