@@ -64,6 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
     options.forEach((option) => {
       const opt = document.createElement("option");
       opt.value = option;
+      opt.textContent = option;
 
 
     });
