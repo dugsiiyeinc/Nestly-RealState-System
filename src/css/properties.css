@@ -32,3 +32,7 @@ body {
     color: var(--text-color);
     line-height: 1.6; /* Improved readability */
 }
+
+section{
+    padding: 3rem 9%;
+}
