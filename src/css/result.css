@@ -359,3 +359,22 @@ section {
   justify-content: center;
   margin-top: 2rem;
 }
+
+.agent-card .myBtn {
+  flex: 1;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, var(--light-red), var(--red));
+  color: #fff;
+  border-radius: 0.8rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.agent-card .myBtn:hover {
+  background: linear-gradient(135deg, var(--red), var(--dark-red));
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-0.3rem);
+}
