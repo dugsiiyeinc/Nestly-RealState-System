@@ -109,9 +109,10 @@ document.addEventListener("DOMContentLoaded", function () {
     );
 
     if (!allSelected) {
-      
+       // Alert if any field is not selected
+       alert("Please select an option for all fields before submitting.");
     }else{
-      
+
     }
 
   });
