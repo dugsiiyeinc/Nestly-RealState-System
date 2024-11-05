@@ -249,3 +249,29 @@ section {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3); /* Enhanced shadow */
 }
 
+/*===============*/
+/*AGENT SECTIONS*/
+/*===============*/
+.section-heading {
+  font-size: 4rem;
+  color: var(--text-color);
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.section-heading span {
+  color: var(--red);
+}
+
+.real-estate-agents .agent-box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 5rem 0;
+  background: var(--light-bg);
+  border-radius: 1rem;
+  box-shadow: 0 8px 30px #0000001a;
+}
+
