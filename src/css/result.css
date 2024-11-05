@@ -13,3 +13,18 @@
   --box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.1); /* Soft shadow */
   --hover-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.2); /* Stronger shadow on hover */
 }
+
+/*===========*/
+/* CSS RESET */
+/*===========*/
+
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+}
