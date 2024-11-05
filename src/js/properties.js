@@ -66,7 +66,9 @@ document.addEventListener("DOMContentLoaded", function () {
       opt.value = option;
       opt.textContent = option;
       select.appendChild(opt);
-
     });
   };
+  // populate select elements with data from local API
+  populateSelect("neighborhoods", data.neighborhoods);
+
 });
