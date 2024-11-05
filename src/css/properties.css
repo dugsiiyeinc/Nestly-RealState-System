@@ -9,3 +9,14 @@
     --border-color: rgba(255, 255, 255, 0.2); /* Lighter border for dark theme */
     --box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.1); /* Softer shadow for dark background */
 }
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
