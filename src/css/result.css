@@ -28,3 +28,48 @@
   text-decoration: none;
   text-transform: capitalize;
 }
+/*================*/
+/* BASIC STYLES */
+/*===============*/
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+
+body {
+  background: var(--dark-bg);
+}
+
+section {
+  padding: 2rem 9%;
+}
+
+.myBtn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.8rem 3.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.7rem;
+  color: var(--red);
+  background: var(--light-red);
+  cursor: pointer;
+  text-align: center;
+}
+
+.myBtn:hover {
+  background: var(--red);
+  color: #fff;
+}
+
+.heading {
+  font-size: 4rem;
+  color: var(--text-color);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.heading span {
+  color: var(--red);
+}
