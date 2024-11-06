@@ -22,6 +22,45 @@ document.addEventListener("DOMContentLoaded", () => {
     maxHeight: "90%",
   });
   lightbox.appendChild(lightboxImage);
+  // Function to open the lightbox with the selected image
+  const openLightbox = (src) => {
+    lightboxImage.src = src;
+    lightbox.style.display = "flex"; // Show lightbox
+  };
 
+  // Close the lightbox when it is clicked
+  lightbox.addEventListener("click", () => {
+    lightbox.style.display = "none"; // Hide lightbox
+  });
+
+  // Add click event to all property images to open lightbox
+  const propertyImages = document.querySelectorAll(
+    ".property-box .image-wrapper img"
+  );
+  propertyImages.forEach((img) => {
+    img.addEventListener("click", () => openLightbox(img.src));
+  });
+
+  // Handle "Request Info" and "View Details" button actions
+  const requestButtons = document.querySelectorAll(
+    ".property-content .myBtn:nth-child(1)"
+  );
+  const viewButtons = document.querySelectorAll(
+    ".property-content .myBtn:nth-child(2)"
+  );
+
+  requestButtons.forEach((button) => {
+    button.addEventListener("click", (event) => {
+      event.preventDefault(); // Prevent default anchor behavior
+      alert("Request for information submitted!");
+    });
+  });
+
+  viewButtons.forEach((button) => {
+    button.addEventListener("click", (event) => {
+      event.preventDefault(); // Prevent default anchor behavior
+      alert("Viewing details...");
+    });
+  });
 
 });
