@@ -1,206 +1,222 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 #footer-section {
-    border-top: 1px solid #3b3b3b71;
-    padding-block: 50px;
-    width: 100%;
-  }
-  .left-right-sides {
-    width: 100%;
-    padding: 20px 0;
+  border-top: 1px solid #3b3b3b71;
+  padding-block: 50px;
+  width: 100%;
+}
+.left-right-sides {
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  gap: 1rem;
+  & p {
+    font-size: 1.1rem;
     display: flex;
-    gap: 1rem;
-    & p {
-      font-size: 1.1rem;
-      display: flex;
-      align-items: center;
-      gap: 1.2rem;
-      color: #fff;
-      & img {
-        width: 50px;
-        height: 50px;
-      }
-    }
-  }
-  .left-side {
-    /* flex-basis: 40%; */
-    & .SendEmail {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      margin-top: 20px;
-      & button {
-        background-color: #141414;
-        border-radius: 50%;
-        & .send-icon {
-          background-color: black;
-          color: white;
-          padding: 12px;
-          border-radius: 80%;
-          font-size: 24px;
-          width: 100%;
-        }
-      }
-    }
-  }
-  .telegram{
-    background-color: #121111;
-    img{
-      background-color: #141414;
+    align-items: center;
+    gap: 1.2rem;
+    color: #fff;
+    & img {
       width: 50px;
       height: 50px;
-      border-radius: 50%;
     }
   }
-  .SendEmail input {
-    padding: 15px;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0 0 5px 1px #53525230;
-    width: 100%;
-    background-color: #3b3b3b71;
-    outline-color: slateblue;
-    color: #fff;
-    font-size: 1.1rem;
-  }
-  .right-side {
-    flex: 60%;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    width: 100%;
-    gap: 1rem;
-  }
-  .home-list {
-    padding: 10px;
-  }
-  .home-list h3 {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
-    color: #999999;
-  }
-  .home-list ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  .home-list ul li {
-    margin-bottom: 8px;
-    width: 100%;
-  }
-  .home-list ul li a {
-    display: block;
-    width: 100%;
-    color: #fff;
-    transition: all 0.5s;
-  }
-  .home-list a:hover {
-    transform: scale(1.2);
-    color: slateblue;
-  }
-  .socail-media {
+}
+.left-side {
+  /* flex-basis: 40%; */
+  & .SendEmail {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 12px 0;
-  }
-  .term-condition p {
-    font-size: 1.2rem;
-    color: #fff;
-    display: flex;
-    gap: 3rem;
-  }
-  .socail-media ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
     gap: 1rem;
+    margin-top: 20px;
+    & button {
+      background-color: #141414;
+      border-radius: 50%;
+      & .send-icon {
+        background-color: black;
+        color: white;
+        padding: 12px;
+        border-radius: 80%;
+        font-size: 24px;
+        width: 100%;
+      }
+    }
   }
-  .socail-media ul li a {
-    display: block;
-    padding: 10px;
+}
+.telegram {
+  background-color: #121111;
+  img {
+    background-color: #141414;
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: black;
-    color: #fff;
+  }
+}
+.SendEmail input {
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 1px #53525230;
+  width: 100%;
+  background-color: #3b3b3b71;
+  outline-color: slateblue;
+  color: #fff;
+  font-size: 1.1rem;
+}
+.right-side {
+  flex: 60%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  gap: 1rem;
+}
+.home-list {
+  padding: 10px;
+}
+.home-list h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #999999;
+}
+.home-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.home-list ul li {
+  margin-bottom: 8px;
+  width: 100%;
+}
+.home-list ul li a {
+  display: block;
+  width: 100%;
+  color: #fff;
+  transition: all 0.5s;
+}
+.home-list a:hover {
+  transform: scale(1.2);
+  color: slateblue;
+}
+.socail-media {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+}
+.term-condition p {
+  font-size: 1.2rem;
+  color: #fff;
+  display: flex;
+  gap: 3rem;
+}
+.socail-media ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+}
+.socail-media ul li a {
+  display: block;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  font-size: 1.3rem;
+  align-content: center;
+  transition: all 0.5s;
+}
+.socail-media a:hover {
+  transform: scale(1.1);
+  background-color: rgb(23, 22, 22);
+  color: #fff;
+}
+/* *Mobile device */
+@media only screen and (max-width: 768px) {
+  /* *================================================
+    * Contact style responsvie for Contact Page
+    *============== */
+  .contact-section {
+    padding-inline: 20px;
+    h2 {
+      font-size: 2rem;
+    }
+  }
+  .forms-maps {
+    flex-direction: column;
+    padding: 0 10px;
+}
+.contact-Form{
+  margin: 4rem 0 2rem;
+
+}
+  /* *================================================
+    * Footer style responsive styles 
+    *============== *
+  /* *Footer */
+  .left-right-sides {
+    flex-direction: column;
+    & .left-side {
+      padding: 0 15px;
+      & p span {
+        font-size: 1.5rem;
+        font-weight: 600;
+        letter-spacing: 2px;
+      }
+    }
+    .right-side {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .socail-media {
+    flex-direction: column-reverse;
     text-align: center;
-    font-size: 1.3rem;
-    align-content: center;
-    transition: all 0.5s;
-  }
-  .socail-media a:hover {
-    transform: scale(1.1);
-    background-color: #ffffffa2;
-    color: slateblue;
-  }
-  /* *Mobile device */
-@media only screen and  (max-width: 768px) {
-    
-     /* *Footer */
-     .left-right-sides {
-        flex-direction: column;
-        & .left-side{
-            padding: 0 15px;
-            & p span {
-                font-size: 1.5rem;
-                font-weight: 600;
-                letter-spacing: 2px;
-            }
-        }
-        .right-side{
-            grid-template-columns: repeat(2,1fr) ;
-        }
+    gap: 1.2rem;
+    & p {
+      flex-direction: column;
+      gap: 1rem;
     }
-    
-    .socail-media {
-        flex-direction: column-reverse;
-        text-align: center;
-        gap: 1.2rem;
-        & p {
-            flex-direction: column ;
-            gap: 1rem;
-        }
-    }
-  
+  }
 }
 /* *TABLET DEVICE */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
- 
-     /* *Footer */
-     .left-right-sides {
-        flex-direction: column;
-        & .left-side{
-            padding: 0 15px;
-            & p span {
-                font-size: 1.5rem;
-                font-weight: 600;
-                letter-spacing: 2px;
-            }
-        }
-        .right-side{
-            grid-template-columns: repeat(2,1fr) ;
-        }
+  /* *Footer */
+  .left-right-sides {
+    flex-direction: column;
+    & .left-side {
+      padding: 0 15px;
+      & p span {
+        font-size: 1.5rem;
+        font-weight: 600;
+        letter-spacing: 2px;
+      }
     }
-    .home-list ul li a {
-        color: #fff !important;
+    .right-side {
+      grid-template-columns: repeat(2, 1fr);
     }
-    
-    .socail-media {
-        flex-direction: column-reverse;
-        text-align: center;
-        gap: 1.2rem;
-        & p {
-            flex-direction: column ;
-            gap: 1rem;
-        }
-       
+  }
+  .home-list ul li a {
+    color: #fff !important;
+  }
+
+  .socail-media {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 1.2rem;
+    & p {
+      flex-direction: column;
+      gap: 1rem;
     }
-    .socail-media ul li a i {
-        color: #fff !important;
-    }
+  }
+  .socail-media ul li a i {
+    color: #fff !important;
+  }
 }
