@@ -2,5 +2,17 @@
 document.addEventListener("DOMContentLoaded", () => {
   const lightbox = document.createElement("div");
   lightbox.id = "lightbox";
-
+  Object.assign(lightbox.style, {
+    display: "none", // Hidden by default
+    position: "fixed",
+    top: "0",
+    left: "0",
+    width: "100%",
+    height: "100%",
+    backgroundColor: "rgba(0, 0, 0, 0.8)",
+    zIndex: "1000",
+    justifyContent: "center",
+    alignItems: "center",
+    cursor: "pointer",
+  });
 });
