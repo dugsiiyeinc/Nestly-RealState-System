@@ -16,5 +16,10 @@ document.addEventListener("DOMContentLoaded", () => {
     cursor: "pointer",
   });
   document.body.appendChild(lightbox);
+  const lightboxImage = document.createElement("img");
+  Object.assign(lightboxImage.style, {
+    maxWidth: "90%",
+    maxHeight: "90%",
+  });
 
 });
