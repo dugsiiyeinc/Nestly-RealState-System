@@ -15,4 +15,6 @@ document.addEventListener("DOMContentLoaded", () => {
     alignItems: "center",
     cursor: "pointer",
   });
+  document.body.appendChild(lightbox);
+
 });
