@@ -21,5 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     maxWidth: "90%",
     maxHeight: "90%",
   });
+  lightbox.appendChild(lightboxImage);
+
 
 });
