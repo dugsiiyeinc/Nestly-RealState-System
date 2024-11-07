@@ -29,16 +29,17 @@
                 />
               </div>
               <ul class="nav-links">
-                <li><a href="home.html">Home</a></li>
-                <li><a href="html/About_html/about.html">About Us</a></li>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/about.html">About Us</a></li>
+                <li><a href="/pages/contact.html">Contact</a></li>
                 <li><a href="html/home_html/properties.html">Properties</a></li>
               </ul>
-              <a href="#" class="login-button">Sign Up</a>
+              <a href="/pages/form.html" class="login-button">Sign Up</a>
       
               <div class="hamburger" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
               </div>
             </div>
           </nav>
@@ -89,17 +90,17 @@
       <section class="contact-Form">
         <div class="container forms-maps">
             <div class="form-contact">
-                <form >
+                <form id="contact-info" >
                     <label for="firstName">First Name</label>
-                    <input type="text" name="firstName" id="firstName" placeholder="Enter the first name">
+                    <input type="text" name="firstName" id="firstName" placeholder="Enter the first name" required>
                     <label for="lastName">Last Name</label>
-                    <input type="text" name="lastName" id="lastName" placeholder="Enter the last name">
+                    <input type="text" name="lastName" id="lastName" placeholder="Enter the last name" required>
                     <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Enter the email">
+                    <input type="email" name="email" id="email" placeholder="Enter the email" required>
                     <label for="number">Phone</label>
-                    <input type="number" name="number" id="number" placeholder="Enter the number">
+                    <input type="number" name="number" id="number" placeholder="Enter the number" required>
                     <label for="message">Message</label>
-                    <textarea name="message" id="message" placeholder="Enter the message here." cols="5" rows="4"></textarea>
+                    <textarea name="message" id="message" placeholder="Enter the message here." cols="5" rows="4" required></textarea>
                     <button class="btn" type="submit">Send Your Message </button>
                 </form>
             </div>
@@ -117,7 +118,7 @@
                 <div class="left-side">
                     <p><img src="https://static.vecteezy.com/system/resources/thumbnails/023/495/230/small_2x/real-estate-logo-1-free-png.png" alt="logo "> <span>Nestly</span></p>
                     <form class="SendEmail">
-                        <input type="email" name="email" id="email" placeholder="Enter your email here">
+                        <input type="email" name="footer-email" id="footer-email" placeholder="Enter your email here">
                         <button class="telegram" type="submit"><img src="https://image.similarpng.com/thumbnail/2021/01/Telegram-icon-with-black-color-on-transparent-background-PNG.png" alt="sent message pic"></button>
                     </form>
                 </div>
@@ -182,6 +183,6 @@
         
        </footer>
 
-       <script src="/Js/home.js"></script>
+       <script src="/Js/form.js"></script>
 </body>
 </html>
