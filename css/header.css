@@ -1,32 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
-/* *Common CSS */
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-button,
-a,
-ul {
-  cursor: pointer;
-  text-decoration: none;
-  list-style: none;
-}
-body {
-  font-family: "Urbanist", sans-serif;
-  background-color: #121111;
-  color: #fff;
-}
-p {
-  color: #999999;
-}
-img {
-  max-width: 100%;
-}
-.container {
-  width: min(100%, 1120px);
-  margin: 0 auto;
-}
+
+
 header {
   border-bottom: 1px solid #3b3b3b71;
   padding: 10px 0;
