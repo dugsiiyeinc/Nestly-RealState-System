@@ -335,29 +335,35 @@ section {
   padding-top: 1.5rem;
 }
 
+.social-share a {
+  margin: 0 8px; /* Increased margin for better spacing */
+  color: var(--text-color);
+  font-size: 1.75rem; /* Increased font size for better visibility */
+  display: inline-flex; /* Ensures proper alignment of icons */
+  align-items: center; /* Vertically center-aligns the icons */
+  transition: all 0.3s ease; /* Smooth transition for all changes */
+}
+
 .social-icon {
-  margin: 0 0.5rem;
-  height: 4rem;
-  width: 4rem;
-  display: inline-flex;
-  align-items: center;
+  display: flex;
   justify-content: center;
-  background: linear-gradient(135deg, var(--light-red), var(--red));
-  color: #fff;
-  border-radius: 0.8rem;
-  font-size: 2rem;
-  transition: transform 0.3s ease;
+  align-items: center;
+  width: 36px; /* Consistent width */
+  height: 36px; /* Consistent height */
+  border-radius: 50%; /* Rounded icons */
+  background-color: rgba(0, 0, 0, 0.1); /* Soft background */
+  transition: all 0.3s ease; /* Smooth transition on hover */
 }
 
 .social-icon:hover {
-  transform: scale(1.1);
+  color: var(--red); /* Changes the color to red on hover */
+  background-color: rgba(0, 0, 0, 0.2); /* Darkens background on hover */
+  transform: scale(1.1); /* Scales up the icon slightly on hover */
 }
 
-.agent-card .buttons {
-  display: flex;
-  gap: 1.2rem;
-  justify-content: center;
-  margin-top: 2rem;
+.social-icon:focus {
+  outline: 2px solid var(--red); /* Outlines icon when focused for accessibility */
+  outline-offset: 4px; /* Slight offset for better visibility */
 }
 
 .agent-card .myBtn {
@@ -406,3 +412,5 @@ section {
     width: 100%;
   }
 }
+
+
