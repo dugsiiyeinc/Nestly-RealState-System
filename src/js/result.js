@@ -1,9 +1,10 @@
-// Wait for the DOM to fully load
+// Wait until the entire DOM is fully loaded before running the script
 document.addEventListener("DOMContentLoaded", () => {
+  // Lightbox element setup for image display in a modal
   const lightbox = document.createElement("div");
   lightbox.id = "lightbox";
   Object.assign(lightbox.style, {
-    display: "none", // Hidden by default
+    display: "none",
     position: "fixed",
     top: "0",
     left: "0",
@@ -16,51 +17,44 @@ document.addEventListener("DOMContentLoaded", () => {
     cursor: "pointer",
   });
   document.body.appendChild(lightbox);
+
+  // Image element inside the lightbox for displaying clicked images
   const lightboxImage = document.createElement("img");
   Object.assign(lightboxImage.style, {
     maxWidth: "90%",
     maxHeight: "90%",
   });
   lightbox.appendChild(lightboxImage);
-  // Function to open the lightbox with the selected image
+
+  // Opens lightbox with selected image
   const openLightbox = (src) => {
     lightboxImage.src = src;
-    lightbox.style.display = "flex"; // Show lightbox
+    lightbox.style.display = "flex";
   };
 
-  // Close the lightbox when it is clicked
+  // Closes the lightbox when clicked
   lightbox.addEventListener("click", () => {
-    lightbox.style.display = "none"; // Hide lightbox
+    lightbox.style.display = "none";
   });
 
-  // Add click event to all property images to open lightbox
-  const propertyImages = document.querySelectorAll(
-    ".property-box .image-wrapper img"
-  );
+  // Add click event to property images to open lightbox
+  const propertyImages = document.querySelectorAll(".property-box .image-wrapper img");
   propertyImages.forEach((img) => {
     img.addEventListener("click", () => openLightbox(img.src));
   });
 
-  // Handle "Request Info" and "View Details" button actions
-  const requestButtons = document.querySelectorAll(
-    ".property-content .myBtn:nth-child(1)"
-  );
-  const viewButtons = document.querySelectorAll(
-    ".property-content .myBtn:nth-child(2)"
-  );
-
-  requestButtons.forEach((button) => {
-    button.addEventListener("click", (event) => {
-      event.preventDefault(); // Prevent default anchor behavior
-      alert("Request for information submitted!");
-    });
-  });
+  // Handle actions for "Request Info" and "View Details" buttons
+  const viewButtons = document.querySelectorAll(".property-content .myBtn");
 
   viewButtons.forEach((button) => {
     button.addEventListener("click", (event) => {
-      event.preventDefault(); // Prevent default anchor behavior
-      alert("Viewing details...");
+      event.preventDefault();
+      
+      // Retrieve property ID and redirect to View Details page
+      const propertyId = button.closest(".property-box").dataset.propertyId;
+      setTimeout(() => {
+        window.location.href = `../html/viewDetails.html?propertyId=${propertyId}`;
+      }, 1000); // Delay for redirection
     });
   });
-
 });

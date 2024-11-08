@@ -171,8 +171,8 @@ section {
 }
 
 .price a {
-  color: var(--text-color);
-  font-size: 1.5rem;
+  color: var(--dark-bg);
+  font-size: 1.8rem;
   margin-right: 0.5rem;
   border-radius: 0.5rem;
   height: 4rem;
@@ -335,29 +335,34 @@ section {
   padding-top: 1.5rem;
 }
 
-.social-icon {
-  margin: 0 0.5rem;
-  height: 4rem;
-  width: 4rem;
+.social-share a {
+  margin: 0 8px; 
+  font-size: 1.75rem; 
   display: inline-flex;
-  align-items: center;
+  align-items: center; 
+  transition: all 0.3s ease; 
+}
+
+.social-icon {
+  display: flex;
   justify-content: center;
-  background: linear-gradient(135deg, var(--light-red), var(--red));
-  color: #fff;
-  border-radius: 0.8rem;
-  font-size: 2rem;
-  transition: transform 0.3s ease;
+  align-items: center;
+  width: 36px; 
+  height: 36px; 
+  border-radius: 50%; 
+  background-color: rgba(0, 0, 0, 0.1); 
+  transition: all 0.3s ease; 
 }
 
 .social-icon:hover {
-  transform: scale(1.1);
+  color: var(--red); 
+  background-color: rgba(0, 0, 0, 0.2); 
+  transform: scale(1.1); 
 }
 
-.agent-card .buttons {
-  display: flex;
-  gap: 1.2rem;
-  justify-content: center;
-  margin-top: 2rem;
+.social-icon:focus {
+  outline: 2px solid var(--red); 
+  outline-offset: 4px; 
 }
 
 .agent-card .myBtn {
@@ -404,5 +409,16 @@ section {
 
   .contact .row form .inputBox input {
     width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .social-share a {
+    margin: 0 6px;
+  }
+  
+  .social-icon {
+    width: 32px; 
+    height: 32px;
   }
 }

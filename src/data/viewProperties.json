@@ -1,0 +1,46 @@
+[
+    {
+        "name": "Luxury Villa",
+        "location": "Beverly Hills",
+        "price": "$1,200,000",
+        "description": "A luxury villa with a beautiful garden, pool, and modern design, offering spacious living for a comfortable lifestyle.",
+        "size": "5000 sqft",
+        "bedrooms": "5 beds",
+        "bathrooms": "4 baths",
+        "status": "For Sale",
+        "image": "../images/img-1.jpg"
+    },
+    {
+        "name": "Modern Apartment",
+        "location": "Downtown Seattle",
+        "price": "$3,000/mo",
+        "description": "A sleek, modern apartment in downtown Seattle, ideal for city living with premium amenities and convenient access to everything.",
+        "size": "1800 sqft",
+        "bedrooms": "2 beds",
+        "bathrooms": "2 baths",
+        "status": "For Rent",
+        "image": "../images/img-2.jpg"
+    },
+    {
+        "name": "Beachfront Condo",
+        "location": "Miami Beach",
+        "price": "$2,500/mo",
+        "description": "A stylish condo with stunning ocean views, perfect for relaxation, featuring open spaces and luxurious living.",
+        "size": "1400 sqft",
+        "bedrooms": "2 beds",
+        "bathrooms": "2 baths",
+        "status": "For Rent",
+        "image": "../images/img-3.jpg"
+    },
+    {
+        "name": "Suburban Family Home",
+        "location": "Palo Alto",
+        "price": "$850,000",
+        "description": "A spacious family home with a large backyard, ideal for growing families, located in a quiet suburban neighborhood.",
+        "size": "3000 sqft",
+        "bedrooms": "4 beds",
+        "bathrooms": "3 baths",
+        "status": "For Sale",
+        "image": "../images/img-4.jpg"
+    }
+]
