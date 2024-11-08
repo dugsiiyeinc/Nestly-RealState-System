@@ -171,8 +171,8 @@ section {
 }
 
 .price a {
-  color: var(--text-color);
-  font-size: 1.5rem;
+  color: var(--dark-bg);
+  font-size: 1.8rem;
   margin-right: 0.5rem;
   border-radius: 0.5rem;
   height: 4rem;
@@ -336,34 +336,33 @@ section {
 }
 
 .social-share a {
-  margin: 0 8px; /* Increased margin for better spacing */
-  color: var(--text-color);
-  font-size: 1.75rem; /* Increased font size for better visibility */
-  display: inline-flex; /* Ensures proper alignment of icons */
-  align-items: center; /* Vertically center-aligns the icons */
-  transition: all 0.3s ease; /* Smooth transition for all changes */
+  margin: 0 8px; 
+  font-size: 1.75rem; 
+  display: inline-flex;
+  align-items: center; 
+  transition: all 0.3s ease; 
 }
 
 .social-icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 36px; /* Consistent width */
-  height: 36px; /* Consistent height */
-  border-radius: 50%; /* Rounded icons */
-  background-color: rgba(0, 0, 0, 0.1); /* Soft background */
-  transition: all 0.3s ease; /* Smooth transition on hover */
+  width: 36px; 
+  height: 36px; 
+  border-radius: 50%; 
+  background-color: rgba(0, 0, 0, 0.1); 
+  transition: all 0.3s ease; 
 }
 
 .social-icon:hover {
-  color: var(--red); /* Changes the color to red on hover */
-  background-color: rgba(0, 0, 0, 0.2); /* Darkens background on hover */
-  transform: scale(1.1); /* Scales up the icon slightly on hover */
+  color: var(--red); 
+  background-color: rgba(0, 0, 0, 0.2); 
+  transform: scale(1.1); 
 }
 
 .social-icon:focus {
-  outline: 2px solid var(--red); /* Outlines icon when focused for accessibility */
-  outline-offset: 4px; /* Slight offset for better visibility */
+  outline: 2px solid var(--red); 
+  outline-offset: 4px; 
 }
 
 .agent-card .myBtn {
