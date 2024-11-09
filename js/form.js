@@ -51,7 +51,7 @@ authForm?.addEventListener('submit', (e) => {
             }).then((result) => {
                 if (result.isConfirmed) {
                     // **! Remember to update here **
-                    window.location.href = `./about.html`
+                    window.location.href = `/pages/properties.html`
                     return;
                 }
             })
