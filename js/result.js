@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // Retrieve property ID and redirect to View Details page
       const propertyId = button.closest(".property-box").dataset.propertyId;
       setTimeout(() => {
-        window.location.href = `../html/viewDetails.html?propertyId=${propertyId}`;
+        window.location.href = `/pages/viewDetails.html?propertyId=${propertyId}`;
       }, 1000); // Delay for redirection
     });
   });

@@ -8,7 +8,7 @@
         "bedrooms": "5 beds",
         "bathrooms": "4 baths",
         "status": "For Sale",
-        "image": "../images/img-1.jpg"
+        "image": "/assets/images/img-1.jpg"
     },
     {
         "name": "Modern Apartment",
@@ -19,7 +19,7 @@
         "bedrooms": "2 beds",
         "bathrooms": "2 baths",
         "status": "For Rent",
-        "image": "../images/img-2.jpg"
+        "image": "/assets/images/img-2.jpg"
     },
     {
         "name": "Beachfront Condo",
@@ -30,7 +30,7 @@
         "bedrooms": "2 beds",
         "bathrooms": "2 baths",
         "status": "For Rent",
-        "image": "../images/img-3.jpg"
+        "image": "/assets/images/img-3.jpg"
     },
     {
         "name": "Suburban Family Home",
@@ -41,6 +41,6 @@
         "bedrooms": "4 beds",
         "bathrooms": "3 baths",
         "status": "For Sale",
-        "image": "../images/img-4.jpg"
+        "image": "/assets/images/img-4.jpg"
     }
 ]
