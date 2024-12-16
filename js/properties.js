@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", async function () {
   // Fetch the data from local JSON
   const fetchData = async () => {
     try {
-      const response = await fetch("/Js/data/data.json"); // Adjust path as needed
+      const response = await fetch("/js/data/data.json"); // Adjust path as needed
       console.log('data is here',response);
       if (!response.ok) {
         throw new Error("Network response was not ok");
@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         localStorage.setItem("propertySearch", JSON.stringify(selectedData));
 
         // Redirect to result.html
-        window.location.href = "/pages/result.html"; // Adjust path as needed
+        window.location.href = "/Pages/result.html"; // Adjust path as needed
       }
     });
   }

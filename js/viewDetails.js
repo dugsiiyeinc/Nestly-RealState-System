@@ -3,7 +3,7 @@ let selectedHouse = null; // Variable to track the selected house
 // Fetch and display properties after successful loading
 const fetchProperties = async () => {
   try {
-    const response = await fetch("/Js/data/viewProperties.json");
+    const response = await fetch("/js/data/viewProperties.json");
     console.log('data',response)
 
     if (!response.ok) {
@@ -202,7 +202,7 @@ const populateFilters = (properties) => {
 
 // Call the fetch function on page load
 window.onload = async () => {
-  const response = await fetch("/Js/data/viewProperties.json");
+  const response = await fetch("/js/data/viewProperties.json");
   const properties = await response.json();
   addSearchEventListeners(properties);
   displayProperties(properties, false); // Initially hide all properties
